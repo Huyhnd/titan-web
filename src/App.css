@@ -1,38 +1,29 @@
-.App {
-  text-align: center;
-}
+body { font-family: Oswald,sans-serif; margin: 0; padding: 0; }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.main-header { position: fixed; padding: 10px 50px; height: 60px; width: calc(100% - 100px); background-color: transparent; z-index: 1; transition: background-color 0.3s ease; }
+.main-header.scroll { background-color: #12203a; transition: background-color 0.3s ease; }
+.main-header .logo { display: inline-block; float: left; }
+.main-header .btn-menu { width: 40px; height: 40px; border: none; background: url("./data/image/icons/Menu.svg"); background-repeat: no-repeat; }
+.main-header img { height: 40px; }
+.main-header ul { display: inline-block; float: right; line-height: 40px; margin: 0; }
+.main-header ul li { display: inline; margin-right: 20px; vertical-align: text-top; }
+.main-header ul li a { font-size: 18px; color: #fff;  text-decoration: none;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.slider { height: 100vh; position: relative; color: #fff; overflow: hidden; }
+.slider * { color: #fff; }
+.slider .slides { margin: 0; padding: 0; display: block; overflow: hidden; position: absolute; left: 0; transition: 2s; }
+.slider .slides .slide-item { width: 100vw; height: 100vh; display: block; float: left; position: relative; }
+.slide-item .slide-content { position: absolute; bottom: 150px; left: 10%; max-width: 80%;}
+.slide-item h1 { text-align: center; text-transform: uppercase; font-size: 60px; margin: 0; }
+.slide-item span { font-weight: 400;}
+.slide-item p { text-align: center; margin: 10px 0 0 0; font-size: 32px;}
+.slider .slides .slide-item.item1 { background: url("./data/image/images/home-banner-1.jpg"); background-position: top center; background-repeat: no-repeat; background-size: cover;}
+.slider .slides .slide-item.item2 { background: url("./data/image/images/home-banner-2.jpg"); background-position: top center; background-repeat: no-repeat; background-size: cover;}
+.slider .slides .slide-item.item3 { background: url("./data/image/images/home-banner-3.jpg"); background-position: top center; background-repeat: no-repeat; background-size: cover;}
+.slider .slides .slide-item.item4 { background: url("./data/image/images/home-banner-4.jpg"); background-position: top center; background-repeat: no-repeat; background-size: cover;}
+.slider .slider-actions { position: absolute; bottom: 40px; width: 200px; text-align: center; left: calc(50% - 100px); }
+.slider .slider-actions .btn-previus { width: 40px; height: 40px; float: left; background-color: transparent; padding: 0; border: none}
+.slider .slider-actions .btn-next { width: 40px; height: 40px; float: right; background-color: transparent; padding: 0; border: none}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.slider img { width: 40px; height: 40px; }
+.slider .slider-actions span {font-size: 35px; }

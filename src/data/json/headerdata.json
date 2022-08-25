@@ -1,0 +1,17 @@
+{
+    "logo": {
+        "href": "/#",
+        "class": "logo",
+        "alt": "logo"
+    },
+    "home": {
+        "href": "/#",
+        "id": "",
+        "text": "Home"
+    },
+    "language": {
+        "href": "/#",
+        "id": "link-change-language",
+        "text": "日本"
+    }
+}
