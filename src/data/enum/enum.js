@@ -1,13 +1,17 @@
+import imgService1 from '../image/images/service1.png'
+import imgService2 from '../image/images/service2.png'
+import imgService3 from '../image/images/service3.png'
+
 const headerConfig = [
     {
         key: "home",
-        href: "/#",
+        url: "/#",
         id: "",
         text: "Home"
     },
     {
         key: "language",
-        href: "/#",
+        url: "/#",
         id: "link-change-language",
         text: "日本"
     }
@@ -40,8 +44,39 @@ const topSliderConfig = [
     }
 ]
 
+const bodyTitleConfig = [
+    {
+        key: "body-title-1",
+        url: "/#",
+        title: "We provide",
+        describe: "Professional and trusted services with cost-effective and exceptional expertise to deal with any complexities in scalable projects"
+    },
+]
 
-module.exports = {
+const bodyContentConfig = [
+    {
+        key: "body-content-1",
+        image: imgService1,
+        contentTitle: "Software Development",
+        contentDescribe: "Develop software applications from business ideas to deployment, develop based on product definition, the initial designs, or develop modules with multiple teams for concurrent development thus reducing time to market."
+    },
+    {
+        key: "body-content-2",
+        image: imgService2,
+        contentTitle: "Maintenance and support",
+        contentDescribe: "Maintain, enhance, and develop new features of existing software applications. We also provide services to migrate from the legacy systems to new technologies to help improve performance and add benefits to the client's businesses."
+    },
+    {
+        key: "body-content-3",
+        image: imgService3,
+        contentTitle: "Software Testing",
+        contentDescribe: "Provide all kind of testing services including automation tool development, enhancement and execution to assure the quality of our client’s products."
+    },
+]
+
+export default {
     topSliderConfig,
     headerConfig,
+    bodyTitleConfig,
+    bodyContentConfig
 }

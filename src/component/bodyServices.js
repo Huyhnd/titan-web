@@ -1,8 +1,4 @@
 import React from "react";
-import imgService1 from '../data/image/images/service1.png'
-import imgService2 from '../data/image/images/service2.png'
-import imgService3 from '../data/image/images/service3.png'
-
 
 class BodyServices extends React.Component {
     constructor(props) {
@@ -22,37 +18,36 @@ class BodyServices extends React.Component {
         return (
             <div className="box box-1">
                 <div className="container">
-                    <div className="title-venture">
-                        <h1 className="title">
-                            <a href="/#">We provide</a>
-                        </h1>
-                    </div>
-                    <div className="describe grey-color">
-                        Professional and trusted services with cost-effective and exceptional expertise to deal with
-                        any complexities in scalable projects
-                    </div>
+                    {
+                        this.props.bodyTitleConfig.map((item) => {
+                            return (
+                                <div key={item.key}>
+                                    <div className="title-venture">
+                                        <h1 className="title">
+                                            <a href={item.url}>{item.title}</a>
+                                        </h1>
+                                    </div>
+                                    <div className="describe grey-color">
+                                        {item.describe}
+                                    </div>
+                                </div>
+                            )
+                        })
+                    }
                     <div className="items">
-                        <div className="item">
-                            <div className="image">
-                                <img src={imgService1} alt="Software development" />
-                            </div>
-                            <h3>SOFTWARE DEVELOPMENT</h3>
-                            <p>Develop software applications from business ideas to deployment, develop based on product definition, the initial designs, or develop modules with multiple teams for concurrent development thus reducing time to market.</p>
-                        </div>
-                        <div className="item">
-                            <div className="image">
-                                <img src={imgService2} alt="Software development" />
-                            </div>
-                            <h3>SOFTWARE DEVELOPMENT</h3>
-                            <p>Develop software applications from business ideas to deployment, develop based on product definition, the initial designs, or develop modules with multiple teams for concurrent development thus reducing time to market.</p>
-                        </div>
-                        <div className="item">
-                            <div className="image">
-                                <img src={imgService3} alt="Software development" />
-                            </div>
-                            <h3>SOFTWARE DEVELOPMENT</h3>
-                            <p>Develop software applications from business ideas to deployment, develop based on product definition, the initial designs, or develop modules with multiple teams for concurrent development thus reducing time to market.</p>
-                        </div>
+                        {
+                            this.props.bodyContentConfig.map((item, index) => {
+                                return (
+                                    <div key={item.key} className="item">
+                                        <div className="image">
+                                            <img src={item.image} alt="img" />
+                                        </div>
+                                        <h3>{item.contentTitle}</h3>
+                                        <p>{item.contentDescribe}</p>
+                                    </div>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </div>

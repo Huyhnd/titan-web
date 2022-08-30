@@ -17,7 +17,7 @@ class App extends React.Component {
       <div className="App">
         <Header images={images} headerConfig={data.headerConfig} />
         <TopSlider images={images} topSliderConfig={data.topSliderConfig} />
-        <BodyServices />
+        <BodyServices images={images} bodyTitleConfig={data.bodyTitleConfig} bodyContentConfig={data.bodyContentConfig} />
         <Footer />
       </div>
     );

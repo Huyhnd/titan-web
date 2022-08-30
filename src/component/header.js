@@ -35,7 +35,7 @@ class Header extends React.Component {
                     {
                         this.props.headerConfig.map((item) => {
                             return (
-                                < li key={item.key} > <a href={item.href} id={item.id}>{item.text}</a></li>
+                                < li key={item.key} > <a href={item.url} id={item.id}>{item.text}</a></li>
                             )
                         })
                     }
