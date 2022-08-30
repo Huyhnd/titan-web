@@ -1,7 +1,4 @@
 import React from "react";
-import nextimg from "../data/image/icons/next.svg";
-import previmg from "../data/image/icons/back.svg";
-import { topSliderConfig } from "../data/enum/enum"
 
 class TopSlider extends React.Component {
     constructor(props) {
@@ -81,7 +78,7 @@ class TopSlider extends React.Component {
             <div className="slider">
                 <div className="slides" id="top-slider">
                     {
-                        topSliderConfig.map((item, index) => {
+                        this.props.topSliderConfig.map((item, index) => {
                             return (
                                 <div key={item.key} className={`slide-item item${index + 1}`}>
                                     <div className="slide-content">
@@ -97,11 +94,11 @@ class TopSlider extends React.Component {
                 </div>
                 <div className="slider-actions">
                     <button className="btn-previus" onClick={() => this.backTopSlider()}>
-                        <img src={previmg} alt="previmg" />
+                        <img src={this.props.images.prevImg} alt="previmg" />
                     </button>
                     <span id="slider-paging">1/4</span>
                     <button className="btn-next" onClick={() => this.nextTopSlider()}>
-                        <img src={nextimg} alt="next-img" />
+                        <img src={this.props.images.nextImg} alt="next-img" />
                     </button>
                 </div>
             </div>

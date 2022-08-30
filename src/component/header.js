@@ -30,7 +30,7 @@ class Header extends React.Component {
     render() {
         return (
             <div className="main-header" id="main-header">
-                <a href="/#" className="logo"><img src={this.props.logo} alt="logo" /></a>
+                <a href="/#" className="logo"><img src={this.props.images.logo} alt="logo" /></a>
                 <ul>
                     {
                         this.props.headerConfig.map((item) => {
