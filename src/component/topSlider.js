@@ -1,4 +1,6 @@
 import React from "react";
+import nextimg from "../data/image/icons/next.svg";
+import previmg from "../data/image/icons/back.svg";
 
 class TopSlider extends React.Component {
     constructor(props) {
@@ -66,11 +68,15 @@ class TopSlider extends React.Component {
     componentDidMount() {
         this.topSliderItemWidth = document.getElementsByClassName("slide-item")[0].clientWidth
         window.addEventListener('load', this.loadTopSlider())
-
+        this.autoSlide = setInterval(
+            () => this.nextTopSlider(),
+            2000
+        );
     }
 
     componentWillUnmount() {
         window.removeEventListener('unload', this.loadTopSlider())
+        clearInterval(this.autoSlide)
     }
 
     render() {
@@ -94,11 +100,11 @@ class TopSlider extends React.Component {
                 </div>
                 <div className="slider-actions">
                     <button className="btn-previus" onClick={() => this.backTopSlider()}>
-                        <img src={this.props.images.prevImg} alt="previmg" />
+                        <img src={previmg} alt="previmg" />
                     </button>
                     <span id="slider-paging">1/4</span>
                     <button className="btn-next" onClick={() => this.nextTopSlider()}>
-                        <img src={this.props.images.nextImg} alt="next-img" />
+                        <img src={nextimg} alt="next-img" />
                     </button>
                 </div>
             </div>

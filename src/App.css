@@ -5,7 +5,8 @@ a {text-decoration: none; color: #262626;}
 
 .main-header { position: fixed; padding: 10px 50px; height: 60px; width: calc(100% - 100px); background-color: transparent; z-index: 1; transition: background-color 0.3s ease; }
 .main-header.scroll { background-color: #12203a; transition: background-color 0.3s ease; }
-.main-header .logo { display: inline-block; float: left; }
+.main-header .logo { display: inline-block; float: left; top: 50%; transform: translateY(10%);}
+.main-header .logo img {width: 150px; height: 52px;}
 .main-header .btn-menu { width: 40px; height: 40px; border: none; background: url("./data/image/icons/Menu.svg"); background-repeat: no-repeat; }
 .main-header img { height: 40px; }
 .main-header ul { display: inline-block; float: right; line-height: 40px; margin: 0; }
@@ -30,7 +31,6 @@ a {text-decoration: none; color: #262626;}
 .slider .slider-actions img {text-align: center; top: 50%; transform: translateY(26%);}
 .slider img { width: 40px; height: 40px; }
 .slider .slider-actions span {font-size: 35px; }
-
 
 .box .title-venture { text-align: center; }
 .box .title-venture a { font-size: 42px; font-weight: 400; }

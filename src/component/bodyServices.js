@@ -36,11 +36,11 @@ class BodyServices extends React.Component {
                     }
                     <div className="items">
                         {
-                            this.props.bodyContentConfig.map((item, index) => {
+                            this.props.bodyContentConfig.map((item) => {
                                 return (
                                     <div key={item.key} className="item">
                                         <div className="image">
-                                            <img src={item.image} alt="img" />
+                                            <img src={item.image} alt="image" />
                                         </div>
                                         <h3>{item.contentTitle}</h3>
                                         <p>{item.contentDescribe}</p>

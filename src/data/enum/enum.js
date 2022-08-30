@@ -75,8 +75,8 @@ const bodyContentConfig = [
 ]
 
 export default {
-    topSliderConfig,
     headerConfig,
+    topSliderConfig,
     bodyTitleConfig,
     bodyContentConfig
 }
