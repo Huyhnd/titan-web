@@ -1,9 +1,13 @@
 import React from "react";
+import data from '../data/enum/enum'
 
 class Header extends React.Component {
     constructor(props) {
         super(props)
         this.scrollEv = this.scrollEv.bind(this);
+        this.state = {
+            headerConfig: data.headerConfig
+        }
     }
 
     componentDidMount() {
@@ -33,7 +37,7 @@ class Header extends React.Component {
                 <a href="/#" className="logo"><img src={this.props.images.logo} alt="logo" /></a>
                 <ul>
                     {
-                        this.props.headerConfig.map((item) => {
+                        this.state.headerConfig.map((item) => {
                             return (
                                 < li key={item.key} > <a href={item.url} id={item.id}>{item.text}</a></li>
                             )

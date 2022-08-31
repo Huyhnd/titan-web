@@ -74,9 +74,12 @@ const bodyContentConfig = [
     },
 ]
 
-export default {
+const exportedObject = {
     headerConfig,
     topSliderConfig,
     bodyTitleConfig,
     bodyContentConfig
-}
+};
+
+
+export default exportedObject;

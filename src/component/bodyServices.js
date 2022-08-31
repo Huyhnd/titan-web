@@ -1,8 +1,13 @@
 import React from "react";
+import data from '../data/enum/enum'
 
 class BodyServices extends React.Component {
     constructor(props) {
         super(props)
+        this.state = {
+            bodyContentConfig: data.bodyContentConfig,
+            bodyTitleConfig: data.bodyTitleConfig
+        }
     }
 
     componentDidMount() {
@@ -19,7 +24,7 @@ class BodyServices extends React.Component {
             <div className="box box-1">
                 <div className="container">
                     {
-                        this.props.bodyTitleConfig.map((item) => {
+                        this.state.bodyTitleConfig.map((item) => {
                             return (
                                 <div key={item.key}>
                                     <div className="title-venture">
@@ -36,12 +41,12 @@ class BodyServices extends React.Component {
                     }
                     <div className="items">
                         {
-                            this.props.bodyContentConfig.map((item) => {
+                            this.state.bodyContentConfig.map((item) => {
                                 return (
                                     <div key={item.key} className="item">
                                         <div className="item-title">
                                             <div className="image">
-                                                <img src={item.image} alt="image" />
+                                                <img src={item.image} alt="..." />
                                             </div>
                                             <h3>{item.contentTitle}</h3>
                                         </div>
