@@ -18,74 +18,83 @@ class TopSlider extends React.Component {
     }
 
     loadTopSlider() {
-        let topSlider = document.getElementById("top-slider")
-        if (topSlider) {
-            topSlider.style.width = this.topSliderItemWidth * this.topSliderItemCount + "px"
-        }
+        let newTopSliderItemWidth = document.getElementsByClassName("slide-item")[0].clientWidth
+        this.setState({ topSliderItemWidth: newTopSliderItemWidth }, () => {
+            let topSlider = document.getElementById("top-slider")
+            if (topSlider) {
+                topSlider.style.width = (this.state.topSliderItemWidth * this.state.topSliderItemCount) + 'px'
+            }
+        })
+
     }
 
     backTopSlider() {
-        if (this.currentTopSliderItem === 1) {
-            this.currentTopSliderItem = this.topSliderItemCount
+        let currentTopSliderItem = this.state.currentTopSliderItem
+        if (currentTopSliderItem === 1) {
+            currentTopSliderItem = this.state.topSliderItemCount
         } else {
-            this.currentTopSliderItem--
-        }
-        let leftPosition = (this.currentTopSliderItem - 1) * this.topSliderItemWidth
-        let sliderElement = document.getElementById("top-slider")
-        if (sliderElement) {
-            if (this.currentTopSliderItem === 1) {
-                sliderElement.style.left = "0"
-            } else {
-                sliderElement.style.left = "-" + leftPosition + "px"
-            }
+            currentTopSliderItem--
         }
 
-        let pagingElement = document.getElementById("slider-paging")
-        if (pagingElement) {
-            pagingElement.innerHTML = this.currentTopSliderItem + "/" + this.topSliderItemCount
-        }
+        this.setState({ currentTopSliderItem: currentTopSliderItem }, () => {
+            let leftPosition = (currentTopSliderItem - 1) * this.state.topSliderItemWidth
+            let sliderElement = document.getElementById("top-slider")
+            if (sliderElement) {
+                if (this.state.currentTopSliderItem === 1) {
+                    sliderElement.style.left = "0"
+                } else {
+                    sliderElement.style.left = "-" + leftPosition + "px"
+                }
+            }
+
+            let pagingElement = document.getElementById("slider-paging")
+            if (pagingElement) {
+                pagingElement.innerHTML = currentTopSliderItem + "/" + this.state.topSliderItemCount
+            }
+        })
     }
 
     nextTopSlider() {
-        if (this.currentTopSliderItem === this.topSliderItemCount) {
-            this.currentTopSliderItem = 1
+        let currentTopSliderItem = this.state.currentTopSliderItem
+        if (currentTopSliderItem === this.state.topSliderItemCount) {
+            currentTopSliderItem = 1
         } else {
-            this.currentTopSliderItem++
-        }
-        let leftPosition = (this.currentTopSliderItem - 1) * this.topSliderItemWidth
-        let sliderElement = document.getElementById("top-slider")
-        if (sliderElement) {
-            if (this.currentTopSliderItem === 1) {
-                sliderElement.style.left = "0"
-            } else {
-                sliderElement.style.left = "-" + leftPosition + "px"
-            }
+            currentTopSliderItem++
         }
 
-        let pagingElement = document.getElementById("slider-paging")
-        if (pagingElement) {
-            pagingElement.innerHTML = this.currentTopSliderItem + "/" + this.topSliderItemCount
-        }
+        this.setState({ currentTopSliderItem: currentTopSliderItem }, () => {
+            let leftPosition = (currentTopSliderItem - 1) * this.state.topSliderItemWidth
+            let sliderElement = document.getElementById("top-slider")
+            if (sliderElement) {
+                if (currentTopSliderItem === 1) {
+                    sliderElement.style.left = "0"
+                } else {
+                    sliderElement.style.left = "-" + leftPosition + "px"
+                }
+            }
+
+            let pagingElement = document.getElementById("slider-paging")
+            if (pagingElement) {
+                pagingElement.innerHTML = currentTopSliderItem + "/" + this.state.topSliderItemCount
+            }
+        })
     }
 
     componentDidMount() {
-        this.setState(() => ({
-            topSliderItemWidth: document.getElementsByClassName("slide-item")[0].clientWidth
-        }))
-        console.log(this.state.topSliderItemWidth)
         window.addEventListener('load', this.loadTopSlider())
-        // this.autoSlide = setInterval(
-        //     () => this.nextTopSlider(),
-        //     2000
-        // );
+        this.autoSlide = setInterval(
+            () => this.nextTopSlider(),
+            2000
+        );
     }
 
     componentWillUnmount() {
         window.removeEventListener('unload', this.loadTopSlider())
-        // clearInterval(this.autoSlide)
+        clearInterval(this.autoSlide)
     }
 
     render() {
+        //let { topSliderItemCount, topSliderItemWidth } = this.state
         return (
             <div className="slider">
                 <div className="slides" id="top-slider">
