@@ -6,6 +6,8 @@ import BodyServices from './component/bodyServices';
 import images from './data/enum/image'
 import React from 'react';
 import BodyDomain from './component/bodyDomain';
+import BodyInnovation from './component/bodyInnovations';
+import BodyModel from './component/bodyModels';
 
 class App extends React.Component {
   constructor(props) {
@@ -22,6 +24,8 @@ class App extends React.Component {
         <TopSlider images={this.state.images} />
         <BodyServices />
         <BodyDomain images={this.state.images} />
+        <BodyInnovation />
+        <BodyModel />
         <Footer />
       </div>
     );

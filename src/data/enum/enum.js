@@ -10,6 +10,10 @@ import domainImg6 from '../image/images/testing.png'
 import domainImg7 from '../image/images/blockchain.png'
 import domainImg8 from '../image/images/ai.png'
 import domainImg9 from '../image/images/crm.png'
+import innovationImg from '../image/images/innovation.jpg'
+import modelImg1 from '../image/images/teams.png'
+import modelImg2 from '../image/images/cost.png'
+import modelImg3 from '../image/images/time.png'
 
 
 const headerConfig = [
@@ -151,13 +155,84 @@ const domainContentConfig = [
     },
 ]
 
+const innovationTitleConfig = [
+    {
+        key: "innovation-title",
+        url: "/#",
+        title: "Innovations",
+        describe: ""
+    },
+]
+
+const innovationContentConfig = [
+    {
+        key: "innovation-content",
+        image: innovationImg,
+        url: "/#",
+        contentDescribe: "We always hunger for new idea creation by providing facilities for product development and an environment where creativity leverages our skills and services."
+    },
+]
+
+const modelTitleConfig = [
+    {
+        key: "model-title",
+        url: "/#",
+        title: "Engagement Models",
+        describe: "We provide flexible business engagement models for offshore software testing and development services. They can be altered or combined at any stages of the business engagement."
+    },
+]
+
+const modelContentConfig = [
+    {
+        key: "model-content-1",
+        image: modelImg1,
+        contentTitle: "Dedicated Team",
+        content: [
+            "Dedicated professional team work for your projects.",
+            "Virtual extension of your engineering team.",
+            "Flexible task assignments based on your needs.",
+            "Stable and scalable resources.",
+            "Budget is measured in man-months.",
+            "The separate team of professionals will work over your project."
+        ]
+    },
+    {
+        key: "model-content-2",
+        image: modelImg2,
+        contentTitle: "Fixed Cost",
+        content: [
+            "Task assignments are defined clearly at the requirements.",
+            "Project schedule is planned clearly.",
+            "Budget is fixed based on requirements.",
+            "Fixed project budget (measured in man hours) and time limits."
+        ]
+    },
+    {
+        key: "model-content-3",
+        image: modelImg3,
+        contentTitle: "Time & Material",
+        content: [
+            "Flexible task assignments based on your needs within time limits.",
+            "Adjustable and designated resources.",
+            "Budget is flexible and can be adjusted based on your requirements.",
+            "Stable and scalable resources.",
+            "Budget is measured in man-months.",
+            "Project budget is flexible and can be adjusted according to your requirements."
+        ]
+    },
+]
+
 const exportedObject = {
     headerConfig,
     topSliderConfig,
     bodyTitleConfig,
     bodyContentConfig,
     domainTitleConfig,
-    domainContentConfig
+    domainContentConfig,
+    innovationTitleConfig,
+    innovationContentConfig,
+    modelTitleConfig,
+    modelContentConfig
 };
 
 

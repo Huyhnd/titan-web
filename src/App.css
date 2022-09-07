@@ -43,7 +43,7 @@ a {text-decoration: none; color: #262626;}
 .box h2 { font-size: 48px; text-transform: uppercase; }
 .box h3 { font-size: 28px; color: #262626; }
 .box h4 { font-size: 22px; color: #262626; margin: 10px 0; min-height: 55px; }
-.box p { font-size: 30px; color: #757575; margin-bottom: 100px; min-height: 55px; text-align-last: center; text-align: justify;}
+.box .items p { font-size: 30px; color: #757575; margin-bottom: 100px; min-height: 55px; text-align-last: center; text-align: justify;}
 .box-1 .items { display: flex; }
 .box-1 .item { padding: 0 45px; text-align: center; flex:1 }
 .box-1 .item p { font-size: 22px; margin: 0; font-weight: 200;}
@@ -65,5 +65,21 @@ a {text-decoration: none; color: #262626;}
 .container .btn-previus { left: -10px; }
 .container .btn-next img, 
 .container .btn-previus img{ height: 70px; width: 70px;}
+.container {max-width: 1240px;}
 
-.footer {width: 100%; height: 1000px;}
+.innovation-box .item-bg { background-color: #f2f2f2; }
+.innovation-box .innovation-item {display: flex; margin-left: -15px; margin-right: -15px; align-items: center;}
+.innovation-box .image {flex: 1; padding-left: 15px; padding-right: 15px;}
+.innovation-box .image {width: 500px; height: 335px;}
+.innovation-box .content {flex: 2; padding-left: 45px; padding-right: 45px;}
+.innovation-box .content p {font-size: 22px!important; font-weight: 300; padding-left: 45px; padding-right: 45px;}
+
+.box .items .item .item-title .with-border-bottom { border-bottom: 5px solid #186ab4; margin-bottom: 50px; padding-bottom: 40px; border-bottom: 5px solid #186ab4; }
+.box .items {display: flex;}
+.box .items .item {flex: 1; padding-left: 45px; padding-right: 45px;}
+.box .items .item .item-title {text-align: center;}
+.box .items .item .item-title .image {height: 62px;}
+.box .items .item .models-content {margin: 0; padding: 0;}
+.box .items .item .models-content li{ list-style: none; font-size: 22px; margin-bottom: 24px; font-weight: 300; text-align: center;}
+.box .items .item .models-content li:nth-child(odd){ font-weight: 400; }
+.footer {width: 100%; height: 300px; background-color: #12203a;}
