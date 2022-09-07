@@ -5,6 +5,7 @@ import Footer from './component/footer';
 import BodyServices from './component/bodyServices';
 import images from './data/enum/image'
 import React from 'react';
+import BodyDomain from './component/bodyDomain';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,6 +21,7 @@ class App extends React.Component {
         <Header images={this.state.images} />
         <TopSlider images={this.state.images} />
         <BodyServices />
+        <BodyDomain images={this.state.images} />
         <Footer />
       </div>
     );

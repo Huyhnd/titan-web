@@ -37,7 +37,7 @@ class TopSlider extends React.Component {
         }
 
         this.setState({ currentTopSliderItem: currentTopSliderItem }, () => {
-            let leftPosition = (currentTopSliderItem - 1) * this.state.topSliderItemWidth
+            let leftPosition = (this.state.currentTopSliderItem - 1) * this.state.topSliderItemWidth
             let sliderElement = document.getElementById("top-slider")
             if (sliderElement) {
                 if (this.state.currentTopSliderItem === 1) {
@@ -94,7 +94,6 @@ class TopSlider extends React.Component {
     }
 
     render() {
-        //let { topSliderItemCount, topSliderItemWidth } = this.state
         return (
             <div className="slider">
                 <div className="slides" id="top-slider">

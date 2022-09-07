@@ -45,12 +45,25 @@ a {text-decoration: none; color: #262626;}
 .box h4 { font-size: 22px; color: #262626; margin: 10px 0; min-height: 55px; }
 .box p { font-size: 30px; color: #757575; margin-bottom: 100px; min-height: 55px; text-align-last: center; text-align: justify;}
 .box-1 .items { display: flex; }
-.box-1 .item { padding: 0 45px; text-align: center; flex: 1}
+.box-1 .item { padding: 0 45px; text-align: center; flex:1 }
 .box-1 .item p { font-size: 22px; margin: 0; font-weight: 200;}
 .box-1 .image { margin: 0px 0px 60px; text-align: center;}
 .box .item-title { cursor: pointer; }
 .box .item-title h3 { font-weight: 400; text-transform: uppercase;}
 .box .item-title:hover h3{ color: #186ab4; }
-
 .container .describe { font-size: 30px; text-align: center; padding-bottom: 120px; margin: 0 auto; color: #757575; text-align: center; font-weight: 300;}
+
+.box-bg {background: url("./data/image/images/paralax-domains.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding-bottom: 70px;}
+.sub-slider { position: relative; overflow: hidden; color: #fff; height: 750px;}
+.sub-slider .slides { margin: 0; padding: 0; overflow: hidden; position: absolute; left: 0; transition: left 2s ease; display: flex; }
+.sub-slider .slides .slide-item { padding-right: 45px; padding-left: 45px; text-align: center; }
+.container.sub-slider p { color: #fff; font-size: 22px; font-weight: 100;}
+.container.sub-slider h3 {color: #fff}
+.container.sub-slider a {color: #fff}
+.container button { width: 70px; height: 70px; position: absolute; top: 50%; background-color: transparent; padding: 0; border: none; cursor: pointer }
+.container .btn-next { right: -10px; }
+.container .btn-previus { left: -10px; }
+.container .btn-next img, 
+.container .btn-previus img{ height: 70px; width: 70px;}
+
 .footer {width: 100%; height: 1000px;}
