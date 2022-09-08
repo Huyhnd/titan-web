@@ -122,7 +122,7 @@ class BodyClient extends React.Component {
                 <button className="btn-next" onClick={() => this.nextClientSlider()}>
                     <img src={this.props.images.nextImg} alt="nextimg" />
                 </button>
-            </div>
+            </div >
         )
     }
 }

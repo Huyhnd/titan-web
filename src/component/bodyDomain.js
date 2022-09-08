@@ -33,12 +33,12 @@ class BodyDomain extends React.Component {
 
         this.setState({ currentDomainSliderItem: currentDomainSliderItem }, () => {
             let leftPosition = (this.state.currentDomainSliderItem - 1) * this.state.domainSliderItemWidth
-            let subSlider1Element = document.getElementById("domain-slider-items")
-            if (subSlider1Element) {
+            let domainSliderElement = document.getElementById("domain-slider-items")
+            if (domainSliderElement) {
                 if (this.state.currentDomainSliderItem === 1) {
-                    subSlider1Element.style.left = "0"
+                    domainSliderElement.style.left = "0"
                 } else {
-                    subSlider1Element.style.left = "-" + leftPosition + "px"
+                    domainSliderElement.style.left = "-" + leftPosition + "px"
                 }
             }
         })
@@ -54,12 +54,12 @@ class BodyDomain extends React.Component {
 
         this.setState({ currentDomainSliderItem: currentDomainSliderItem }, () => {
             let leftPosition = (this.state.currentDomainSliderItem - 1) * this.state.domainSliderItemWidth
-            let subSlider1Element = document.getElementById("domain-slider-items")
-            if (subSlider1Element) {
+            let domainSliderElement = document.getElementById("domain-slider-items")
+            if (domainSliderElement) {
                 if (this.state.currentDomainSliderItem === 1) {
-                    subSlider1Element.style.left = "0"
+                    domainSliderElement.style.left = "0"
                 } else {
-                    subSlider1Element.style.left = "-" + leftPosition + "px"
+                    domainSliderElement.style.left = "-" + leftPosition + "px"
                 }
             }
         })
@@ -118,6 +118,7 @@ class BodyDomain extends React.Component {
                             }
                         </div>
                     </div>
+
                 </div>
                 <button className="btn-previus" onClick={() => this.backDomainSlider()}>
                     <img src={this.props.images.prevImg} alt="previmg" />

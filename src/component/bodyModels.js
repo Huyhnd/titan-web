@@ -47,11 +47,11 @@ class BodyModel extends React.Component {
                                             </div>
                                             <h3 className="with-border-bottom">{item.contentTitle}</h3>
                                         </div>
-                                        <ul class="models-content">
+                                        <ul className="models-content">
                                             {
                                                 item.content.map((item) => {
                                                     return (
-                                                        <li>{item}</li>
+                                                        <li key={item.key}>{item.content}</li>
                                                     )
                                                 })
                                             }

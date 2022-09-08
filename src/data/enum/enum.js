@@ -213,12 +213,30 @@ const modelContentConfig = [
         image: modelImg1,
         contentTitle: "Dedicated Team",
         content: [
-            "Dedicated professional team work for your projects.",
-            "Virtual extension of your engineering team.",
-            "Flexible task assignments based on your needs.",
-            "Stable and scalable resources.",
-            "Budget is measured in man-months.",
-            "The separate team of professionals will work over your project."
+            {
+                key: "md1c1",
+                content: "Dedicated professional team work for your projects.",
+            },
+            {
+                key: "md1c2",
+                content: "Virtual extension of your engineering team.",
+            },
+            {
+                key: "md1c3",
+                content: "Flexible task assignments based on your needs.",
+            },
+            {
+                key: "md1c4",
+                content: "Stable and scalable resources.",
+            },
+            {
+                key: "md1c5",
+                content: "Budget is measured in man-months.",
+            },
+            {
+                key: "md1c6",
+                content: "The separate team of professionals will work over your project.",
+            },
         ]
     },
     {
@@ -226,10 +244,22 @@ const modelContentConfig = [
         image: modelImg2,
         contentTitle: "Fixed Cost",
         content: [
-            "Task assignments are defined clearly at the requirements.",
-            "Project schedule is planned clearly.",
-            "Budget is fixed based on requirements.",
-            "Fixed project budget (measured in man hours) and time limits."
+            {
+                key: "md2c1",
+                content: "Task assignments are defined clearly at the requirements.",
+            },
+            {
+                key: "md2c2",
+                content: "Project schedule is planned clearly.",
+            },
+            {
+                key: "md2c3",
+                content: "Budget is fixed based on requirements.",
+            },
+            {
+                key: "md2c4",
+                content: "Fixed project budget (measured in man hours) and time limits.",
+            },
         ]
     },
     {
@@ -237,12 +267,30 @@ const modelContentConfig = [
         image: modelImg3,
         contentTitle: "Time & Material",
         content: [
-            "Flexible task assignments based on your needs within time limits.",
-            "Adjustable and designated resources.",
-            "Budget is flexible and can be adjusted based on your requirements.",
-            "Stable and scalable resources.",
-            "Budget is measured in man-months.",
-            "Project budget is flexible and can be adjusted according to your requirements."
+            {
+                key: "md3c1",
+                content: "Flexible task assignments based on your needs within time limits.",
+            },
+            {
+                key: "md3c2",
+                content: "Adjustable and designated resources.",
+            },
+            {
+                key: "md3c3",
+                content: "Budget is flexible and can be adjusted based on your requirements.",
+            },
+            {
+                key: "md3c4",
+                content: "Stable and scalable resources.",
+            },
+            {
+                key: "md3c5",
+                content: "Budget is measured in man-months.",
+            },
+            {
+                key: "md3c6",
+                content: "Project budget is flexible and can be adjusted according to your requirements.",
+            },
         ]
     },
 ]
