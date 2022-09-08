@@ -1,5 +1,5 @@
 import React from "react";
-import data from '../data/enum/enum'
+import data from '../../data/enum/enum'
 
 class BodyDomain extends React.Component {
     constructor(props) {

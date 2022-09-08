@@ -1,5 +1,5 @@
 import React from "react";
-import data from '../data/enum/enum'
+import data from '../../data/enum/enum'
 
 class BodyClient extends React.Component {
     constructor(props) {
@@ -104,7 +104,7 @@ class BodyClient extends React.Component {
                                 this.state.clientContentConfig.map((item) => {
                                     return (
                                         <div key={item.key} className="slide-item" style={{ width: `${clientSliderItemWidth}px` }}>
-                                            <div class="logo-item">
+                                            <div className="logo-item">
                                                 <a href={item.url}>
                                                     <img src={item.image} alt={item.alt} />
                                                 </a>

@@ -1,29 +1,31 @@
 import React from "react";
-import data from '../data/enum/enum'
+import data from '../../data/enum/enum'
 
-class BodyModel extends React.Component {
+class BodyServices extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
-            modelTitleConfig: data.modelTitleConfig,
-            modelContentConfig: data.modelContentConfig
+            bodyContentConfig: data.bodyContentConfig,
+            bodyTitleConfig: data.bodyTitleConfig
         }
     }
+
     componentDidMount() {
 
     }
+
     componentWillUnmount() {
 
     }
 
     render() {
         return (
-            <div className="box model-box">
+            <div className="box box-1">
                 <div className="container">
                     {
-                        this.state.modelTitleConfig.map((item) => {
+                        this.state.bodyTitleConfig.map((item) => {
                             return (
-                                <div key={item.key} >
+                                <div key={item.key}>
                                     <div className="title-venture">
                                         <h1 className="title">
                                             <a href={item.url}>{item.title}</a>
@@ -38,24 +40,16 @@ class BodyModel extends React.Component {
                     }
                     <div className="items">
                         {
-                            this.state.modelContentConfig.map((item) => {
+                            this.state.bodyContentConfig.map((item) => {
                                 return (
                                     <div key={item.key} className="item">
                                         <div className="item-title">
                                             <div className="image">
                                                 <img src={item.image} alt="..." />
                                             </div>
-                                            <h3 className="with-border-bottom">{item.contentTitle}</h3>
+                                            <h3>{item.contentTitle}</h3>
                                         </div>
-                                        <ul className="models-content">
-                                            {
-                                                item.content.map((item) => {
-                                                    return (
-                                                        <li key={item.key}>{item.content}</li>
-                                                    )
-                                                })
-                                            }
-                                        </ul>
+                                        <p>{item.contentDescribe}</p>
                                     </div>
                                 )
                             })
@@ -63,8 +57,8 @@ class BodyModel extends React.Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 
-export default BodyModel;
+export default BodyServices;

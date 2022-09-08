@@ -1,14 +1,15 @@
 import './App.css';
-import Header from './component/header';
-import TopSlider from './component/topSlider';
-import Footer from './component/footer';
-import BodyServices from './component/bodyServices';
-import images from './data/enum/image'
 import React from 'react';
-import BodyDomain from './component/bodyDomain';
-import BodyInnovation from './component/bodyInnovations';
-import BodyModel from './component/bodyModels';
-import BodyClient from './component/bodyClient';
+import images from './data/enum/image';
+
+import Header from './component/header/header';
+import TopSlider from './component/body/topSlider';
+import BodyServices from './component/body/bodyServices';
+import BodyDomain from './component/body/bodyDomain';
+import BodyInnovation from './component/body/bodyInnovations';
+import BodyModel from './component/body/bodyModels';
+import BodyClient from './component/body/bodyClient';
+import Footer from './component/footer/footer';
 
 class App extends React.Component {
   constructor(props) {
