@@ -8,6 +8,7 @@ import React from 'react';
 import BodyDomain from './component/bodyDomain';
 import BodyInnovation from './component/bodyInnovations';
 import BodyModel from './component/bodyModels';
+import BodyClient from './component/bodyClient';
 
 class App extends React.Component {
   constructor(props) {
@@ -26,6 +27,7 @@ class App extends React.Component {
         <BodyDomain images={this.state.images} />
         <BodyInnovation />
         <BodyModel />
+        <BodyClient images={this.state.images} />
         <Footer />
       </div>
     );

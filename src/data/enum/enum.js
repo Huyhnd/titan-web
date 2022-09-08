@@ -14,6 +14,31 @@ import innovationImg from '../image/images/innovation.jpg'
 import modelImg1 from '../image/images/teams.png'
 import modelImg2 from '../image/images/cost.png'
 import modelImg3 from '../image/images/time.png'
+import clientImg1 from '../image/images/http___auvenir_com_.jpeg'
+import clientImg2 from '../image/images/https___www_mobileiron_com_.jpeg'
+import clientImg3 from '../image/images/http___mindgeek_com_.jpeg'
+import clientImg4 from '../image/images/http___www_techwisenetworks_com_.jpeg'
+import clientImg5 from '../image/images/http___www_televz_com_.jpeg'
+import clientImg6 from '../image/images/http___www_saigonx_com_.jpeg'
+import clientImg7 from '../image/images/http___www_greenpacket_com_.jpeg'
+import clientImg8 from '../image/images/https___www_ssense_com_.jpeg'
+import clientImg9 from '../image/images/https___www_greencopper_com_.jpeg'
+import clientImg10 from '../image/images/https___www_bgx_ai_.jpeg'
+import clientImg11 from '../image/images/https___www_wedgenetworks_com_.jpeg'
+import clientImg12 from '../image/images/http___www_digitalperformance_de_.jpeg'
+import clientImg13 from '../image/images/http___mindgeek_com_.jpeg'
+import clientImg14 from '../image/images/http___www_collectiveclarity_net_.jpeg'
+import clientImg15 from '../image/images/http___superhippo_com_.jpeg'
+import clientImg16 from '../image/images/https___www_etnasoft_com_.jpeg'
+import clientImg17 from '../image/images/https___www_trafficpartner_com_.jpeg'
+import clientImg18 from '../image/images/https___www_ewerk_com_.jpeg'
+import clientImg19 from '../image/images/http___www_ktcc_co_jp_.jpeg'
+import clientImg20 from '../image/images/https___frogasia_com_.jpeg'
+import clientImg21 from '../image/images/http___www_tpf_com_au_.jpeg'
+import clientImg22 from '../image/images/https___tvt_biz_.jpeg'
+import clientImg23 from '../image/images/http___www_sssmine_com_.jpeg'
+import clientImg24 from '../image/images/http___www_ecopharma_com_vn_.jpeg'
+import clientImg25 from '../image/images/http___empiregroup_vn_.jpeg'
 
 
 const headerConfig = [
@@ -222,6 +247,168 @@ const modelContentConfig = [
     },
 ]
 
+const clientTitleConfig = [
+    {
+        key: "client-title",
+        url: "/#",
+        title: "Our Clients",
+        describe: ""
+    },
+]
+
+const clientContentConfig = [
+    {
+        key: "client-content-1",
+        url: "http://auvenir.com/",
+        image: clientImg1,
+        alt: "http://auvenir.com/"
+    },
+    {
+        key: "client-content-2",
+        url: "https://www.mobileiron.com/",
+        image: clientImg2,
+        alt: "https://www.mobileiron.com/"
+    },
+    {
+        key: "client-content-3",
+        url: "http://mindgeek.com/",
+        image: clientImg3,
+        alt: "http://mindgeek.com/"
+    },
+    {
+        key: "client-content-4",
+        url: "http://www.techwisenetworks.com/",
+        image: clientImg4,
+        alt: "http://www.techwisenetworks.com/"
+    },
+    {
+        key: "client-content-5",
+        url: "http://www.televz.com/",
+        image: clientImg5,
+        alt: "http://www.televz.com/"
+    },
+    {
+        key: "client-content-6",
+        url: "http://www.saigonx.com/",
+        image: clientImg6,
+        alt: "http://www.saigonx.com/"
+    },
+    {
+        key: "client-content-7",
+        url: "http://www.greenpacket.com/",
+        image: clientImg7,
+        alt: "http://www.greenpacket.com/"
+    },
+    {
+        key: "client-content-8",
+        url: "https://www.ssense.com/",
+        image: clientImg8,
+        alt: "https://www.ssense.com/"
+    },
+    {
+        key: "client-content-9",
+        url: "https://www.greencopper.com/",
+        image: clientImg9,
+        alt: "https://www.greencopper.com/"
+    },
+    {
+        key: "client-content-10",
+        url: "https://www.bgx.ai/",
+        image: clientImg10,
+        alt: "https://www.bgx.ai/"
+    },
+    {
+        key: "client-content-11",
+        url: "https://www.wedgenetworks.com/",
+        image: clientImg11,
+        alt: "https://www.wedgenetworks.com/"
+    },
+    {
+        key: "client-content-12",
+        url: "http://www.digitalperformance.de/",
+        image: clientImg12,
+        alt: "http://www.digitalperformance.de/"
+    },
+    {
+        key: "client-content-13",
+        url: "http://mindgeek.com/",
+        image: clientImg13,
+        alt: "http://mindgeek.com/"
+    },
+    {
+        key: "client-content-14",
+        url: "http://www.collectiveclarity.net/",
+        image: clientImg14,
+        alt: "http://www.collectiveclarity.net/"
+    },
+    {
+        key: "client-content-15",
+        url: "http://superhippo.com/",
+        image: clientImg15,
+        alt: "http://superhippo.com/"
+    },
+    {
+        key: "client-content-16",
+        url: "https://www.etnasoft.com/",
+        image: clientImg16,
+        alt: "https://www.etnasoft.com/"
+    },
+    {
+        key: "client-content-17",
+        url: "https://www.trafficpartner.com/",
+        image: clientImg17,
+        alt: "https://www.trafficpartner.com/"
+    },
+    {
+        key: "client-content-18",
+        url: "https://www.ewerk.com/",
+        image: clientImg18,
+        alt: "https://www.ewerk.com/"
+    },
+    {
+        key: "client-content-19",
+        url: "http://www.ktcc.co.jp/",
+        image: clientImg19,
+        alt: "http://www.ktcc.co.jp/"
+    },
+    {
+        key: "client-content-20",
+        url: "https://frogasia.com/",
+        image: clientImg20,
+        alt: "https://frogasia.com/"
+    },
+    {
+        key: "client-content-21",
+        url: "http://www.tpf.com.au/",
+        image: clientImg21,
+        alt: "http://www.tpf.com.au/"
+    },
+    {
+        key: "client-content-22",
+        url: "https://tvt.biz/",
+        image: clientImg22,
+        alt: "https://tvt.biz/"
+    },
+    {
+        key: "client-content-23",
+        url: "http://www.sssmine.com/",
+        image: clientImg23,
+        alt: "http://www.sssmine.com/"
+    },
+    {
+        key: "client-content-24",
+        url: "http://www.ecopharma.com.vn/",
+        image: clientImg24,
+        alt: "http://www.ecopharma.com.vn/"
+    },
+    {
+        key: "client-content-25",
+        url: "http://empiregroup.vn/",
+        image: clientImg25,
+        alt: "http://empiregroup.vn/"
+    },
+]
+
 const exportedObject = {
     headerConfig,
     topSliderConfig,
@@ -232,7 +419,9 @@ const exportedObject = {
     innovationTitleConfig,
     innovationContentConfig,
     modelTitleConfig,
-    modelContentConfig
+    modelContentConfig,
+    clientTitleConfig,
+    clientContentConfig
 };
 
 

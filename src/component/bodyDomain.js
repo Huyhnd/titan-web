@@ -118,13 +118,13 @@ class BodyDomain extends React.Component {
                             }
                         </div>
                     </div>
-                    <button className="btn-previus" onClick={() => this.backDomainSlider()}>
-                        <img src={this.props.images.prevImg} alt="previmg" />
-                    </button>
-                    <button className="btn-next" onClick={() => this.nextDomainSlider()}>
-                        <img src={this.props.images.nextImg} alt="nextimg" />
-                    </button>
                 </div>
+                <button className="btn-previus" onClick={() => this.backDomainSlider()}>
+                    <img src={this.props.images.prevImg} alt="previmg" />
+                </button>
+                <button className="btn-next" onClick={() => this.nextDomainSlider()}>
+                    <img src={this.props.images.nextImg} alt="nextimg" />
+                </button>
             </div>
         )
     }

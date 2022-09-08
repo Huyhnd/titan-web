@@ -1,4 +1,4 @@
-body { font-family: Oswald,sans-serif; margin: 0; padding: 0; }
+body { font-family: Oswald,sans-serif; margin: 0; padding: 0;}
 a {text-decoration: none; color: #262626;}
 
 .grey-color { color: #757575!important; }
@@ -53,18 +53,18 @@ a {text-decoration: none; color: #262626;}
 .box .item-title:hover h3{ color: #186ab4; }
 .container .describe { font-size: 30px; text-align: center; padding-bottom: 120px; margin: 0 auto; color: #757575; text-align: center; font-weight: 300;}
 
-.box-bg {background: url("./data/image/images/paralax-domains.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding-bottom: 70px;}
+.box-bg {background: url("./data/image/images/paralax-domains.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding-bottom: 70px; position: relative;}
 .sub-slider { position: relative; overflow: hidden; color: #fff; height: 750px;}
 .sub-slider .slides { margin: 0; padding: 0; overflow: hidden; position: absolute; left: 0; transition: left 2s ease; display: flex; }
 .sub-slider .slides .slide-item { padding-right: 45px; padding-left: 45px; text-align: center; }
 .container.sub-slider p { color: #fff; font-size: 22px; font-weight: 100;}
 .container.sub-slider h3 {color: #fff}
 .container.sub-slider a {color: #fff}
-.container button { width: 70px; height: 70px; position: absolute; top: 50%; background-color: transparent; padding: 0; border: none; cursor: pointer }
-.container .btn-next { right: -10px; }
-.container .btn-previus { left: -10px; }
-.container .btn-next img, 
-.container .btn-previus img{ height: 70px; width: 70px;}
+.box-bg button { width: 70px; height: 70px; position: absolute; top: 50%; background-color: transparent; padding: 0; border: none; cursor: pointer }
+.box-bg .btn-next { right: 40px; }
+.box-bg .btn-previus { left: 40px; }
+.box-bg .btn-next img, 
+.box-bg .btn-previus img{ height: 70px; width: 70px;}
 .container {max-width: 1240px;}
 
 .innovation-box .item-bg { background-color: #f2f2f2; }
@@ -82,4 +82,20 @@ a {text-decoration: none; color: #262626;}
 .box .items .item .models-content {margin: 0; padding: 0;}
 .box .items .item .models-content li{ list-style: none; font-size: 22px; margin-bottom: 24px; font-weight: 300; text-align: center;}
 .box .items .item .models-content li:nth-child(odd){ font-weight: 400; }
+
+.client-box {background: url("./data/image/images/our-clients.jpg"); background-attachment: fixed; background-position: center; background-repeat: no-repeat; background-size: cover; padding-bottom: 70px; position: relative;}
+.client-box a {color: #fff;}
+.client-box .sub-slider {height: 450px;}
+.client-box .sub-slider .slides { margin: 0; padding: 0; overflow: hidden; position: absolute; left: 0; transition: left 2s ease; display: flex; }
+.client-box .sub-slider .slides .slide-item {padding-left: 20px; padding-right: 20px; text-align: center;}
+.client-box  button { width: 70px; height: 70px; position: absolute; top: 59%; background-color: transparent; padding: 0; border: none; cursor: pointer  }
+.client-box .btn-next { right: 60px; }
+.client-box .btn-previus { left: 60px; }
+.client-box .btn-next img, 
+.client-box .btn-previus img{ height: 60px; width: 60px;}
+.client-box .logo-item { line-height: 1; }
+.client-box .logo-item a { text-align: center; line-height: 1; }
+.client-box .logo-item img { transition: all .3s ease; filter: grayscale(1); filter: gray; width: 99%; }
+.client-box .logo-item img:hover { filter: grayscale(0); }
+
 .footer {width: 100%; height: 300px; background-color: #12203a;}
