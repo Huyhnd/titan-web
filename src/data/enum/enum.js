@@ -39,6 +39,21 @@ import clientImg22 from '../image/images/https___tvt_biz_.jpeg'
 import clientImg23 from '../image/images/http___www_sssmine_com_.jpeg'
 import clientImg24 from '../image/images/http___www_ecopharma_com_vn_.jpeg'
 import clientImg25 from '../image/images/http___empiregroup_vn_.jpeg'
+import recognizedImg1 from '../image/images/Award_08.png'
+import recognizedImg2 from '../image/images/Award_01.png'
+import recognizedImg3 from '../image/images/Award_03.png'
+import recognizedImg4 from '../image/images/Award_04.png'
+import recognizedImg5 from '../image/images/Award_05.png'
+import recognizedImg6 from '../image/images/Award_02.png'
+import recognizedImg7 from '../image/images/Award_06.png'
+import recognizedImg8 from '../image/images/Award_07.png'
+import jobImg from '../image/images/hiring.jpg'
+import newsImg1 from '../image/images/20220607_2020_Tax_Compliance_Awards_0.jpeg'
+import newsImg2 from '../image/images/2022_Titan_Lunar_New_Year_Wish_0.png'
+import newsImg3 from '../image/images/Titan_Charity_Activity_012022_0.jpeg'
+import blogImg1 from '../image/images/5-Tech-Trends-in-Healthcare-and-Medical-App-Development-01.jpg'
+import blogImg2 from '../image/images/A-developers-tale-of-deadlines-and-fantasy-time-estimates-01.jpg'
+import blogImg3 from '../image/images/A-Practical-Guide-to-Better-Code-Reviews-01.jpg'
 
 
 const headerConfig = [
@@ -457,6 +472,176 @@ const clientContentConfig = [
     },
 ]
 
+const testimonialTitleConfig = [
+    {
+        key: "testimonial-title",
+        url: "/#",
+        title: "Customer Testimonials",
+        describe: "We deeply appreciate all feedbacks from our customers and keep those as realistic results of high-quality service in Titan"
+    },
+]
+
+const testimonialContentConfig = [
+
+]
+
+const recognizedConfig = [
+    {
+        key: "recognized-config",
+        text: "As recognized by",
+        images: [
+            {
+                key: "recognized-image-1",
+                url: "https://m.certipedia.com/?id=9000008850&amp;locale=en",
+                image: recognizedImg1,
+            },
+            {
+                key: "recognized-image-2",
+                url: "https://www.goodfirms.co/company/titan-technology-corporation/focus",
+                image: recognizedImg2,
+            },
+            {
+                key: "recognized-image-3",
+                url: "http://vinasa.org.vn/Default.aspx?sname=vinasa&amp;sid=4&amp;pageid=3074&amp;catid=4199&amp;catname=Gioi-thieu",
+                image: recognizedImg3,
+            },
+            {
+                key: "recognized-image-4",
+                url: "http://vnito2015.vnito.org/award/",
+                image: recognizedImg4,
+            },
+            {
+                key: "recognized-image-5",
+                url: "http://www.phunhuan.hochiminhcity.gov.vn/Pages/default.aspx",
+                image: recognizedImg5,
+            },
+            {
+                key: "recognized-image-6",
+                url: "http://vjc.org.vn/japanictday/vi/homepagevn/",
+                image: recognizedImg6,
+            },
+            {
+                key: "recognized-image-7",
+                url: "https://hca.org.vn/post/13266",
+                image: recognizedImg7,
+            },
+            {
+                key: "recognized-image-8",
+                url: "https://www.jetro.go.jp/en/",
+                image: recognizedImg8,
+            },
+        ]
+    }
+]
+
+const jobTitleConfig = [
+    {
+        key: "job-title",
+        url: "/#",
+        title: "Latest Jobs",
+        describe: ""
+    },
+]
+
+const jobContentConfig = [
+    {
+        key: "job-content",
+        image: jobImg,
+        url: "/#",
+        contentDescribe: [
+            {
+                key: "job-content-1",
+                content: "Titan Technology Corporation is the place where we care about individuals. We offer a friendly, challenging, and collaborative home, where every staff is well-treated, enjoy valuable benefits and willing to share ownership with us.",
+                button: "Join Us"
+            }
+        ]
+    },
+]
+
+const newsTitleConfig = [
+    {
+        key: "news-title",
+        url: "/#",
+        title: "News & Events",
+        describe: ""
+    },
+]
+
+const newsContentConfig = [
+    {
+        key: "news-content-1",
+        image: newsImg1,
+        url: "/#",
+        contentTitle: "2020 Tax Compliance Awards",
+        contentDescribe: "Titan Technology Corporation won the “2020 Tax Compliance Excellence Award” and the “2020 Taxation Responsibility Fulfillment Excellence Awa… ..."
+    },
+    {
+        key: "news-content-2",
+        image: newsImg2,
+        url: "/#",
+        contentTitle: "WELCOMING THE YEAR OF THE TIGER",
+        contentDescribe: "Tiger is a confident, enthusiastic, courageous, and competitive animal. 2022 is the Year of the Tiger. Titan Technology wishes you a new yea… ..."
+    },
+    {
+        key: "news-content-3",
+        image: newsImg3,
+        url: "/#",
+        contentTitle: "CHARITABLE GIVING IN CELEBRATION OF THE YEAR OF TIGER",
+        contentDescribe: "Lunar New Year is almost upon us. Family, friends, and spreading goodwill and cheer are what the holidays really mean. Being a socially cons. ..."
+    },
+]
+
+const blogTitleConfig = [
+    {
+        key: "blog-title",
+        url: "/#",
+        title: "Blogs",
+        describe: ""
+    },
+]
+
+const blogContentConfig = [
+    {
+        key: "blog-content-1",
+        image: blogImg1,
+        url: "/#",
+        contentTitle: "5 Tech Trends in Healthcare and Medical App Development",
+        user: "By Admin",
+        date: "10/06/2021",
+        contentDescribe: "There are many medical apps on the market; every day there are more and more healthcare startups. If you decide to create a medical app, you need to think outside the box and you need to...."
+    },
+    {
+        key: "blog-content-2",
+        image: blogImg2,
+        url: "/#",
+        contentTitle: "A developer’s tale of deadlines and fantasy time esti …",
+        user: "By Admin",
+        date: "10/06/2021",
+        contentDescribe: "You were asked to write a program, and during the discovery phase of the discussions, you were asked how long it was going to take....."
+    },
+    {
+        key: "blog-content-3",
+        image: blogImg3,
+        url: "/#",
+        contentTitle: "A Practical Guide to Better Code Reviews",
+        user: "By Admin",
+        date: "10/06/2021",
+        contentDescribe: " A CODE REVIEW is a part of the development process in which a developer and their colleagues work together and look for bugs within some code..."
+    },
+]
+
+const requestTitleConfig = [
+    {
+        key: "request-title",
+        url: "/#",
+        title: "Request Fof Information",
+        describe: "Thank for your interest in Titan. Please fill out the form to tell us about your area of needs. Our representative will contact you shortly."
+    },
+]
+const footerConfig = [
+
+]
+
 const exportedObject = {
     headerConfig,
     topSliderConfig,
@@ -469,7 +654,18 @@ const exportedObject = {
     modelTitleConfig,
     modelContentConfig,
     clientTitleConfig,
-    clientContentConfig
+    clientContentConfig,
+    testimonialTitleConfig,
+    testimonialContentConfig,
+    recognizedConfig,
+    jobTitleConfig,
+    jobContentConfig,
+    newsTitleConfig,
+    newsContentConfig,
+    blogTitleConfig,
+    blogContentConfig,
+    requestTitleConfig,
+    footerConfig
 };
 
 

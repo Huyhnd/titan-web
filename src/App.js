@@ -10,6 +10,12 @@ import BodyInnovation from './component/body/bodyInnovations';
 import BodyModel from './component/body/bodyModels';
 import BodyClient from './component/body/bodyClient';
 import Footer from './component/footer/footer';
+import BodyTestimonial from './component/body/bodyTestimonial';
+import BodyJob from './component/body/bodyJob';
+import BodyNews from './component/body/bodyNews';
+import BodyBlog from './component/body/bodyBlog';
+import BodyRequest from './component/body/bodyRequest';
+import BodyRecognized from './component/body/bodyRecognized';
 
 class App extends React.Component {
   constructor(props) {
@@ -29,6 +35,12 @@ class App extends React.Component {
         <BodyInnovation />
         <BodyModel />
         <BodyClient images={this.state.images} />
+        <BodyTestimonial />
+        <BodyRecognized />
+        <BodyJob />
+        <BodyNews />
+        <BodyBlog />
+        <BodyRequest />
         <Footer />
       </div>
     );

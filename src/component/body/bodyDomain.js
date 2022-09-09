@@ -118,7 +118,6 @@ class BodyDomain extends React.Component {
                             }
                         </div>
                     </div>
-
                 </div>
                 <button className="btn-previus" onClick={() => this.backDomainSlider()}>
                     <img src={this.props.images.prevImg} alt="previmg" />
