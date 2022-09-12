@@ -37,10 +37,55 @@ class BodyRequest extends React.Component {
                             )
                         })
                     }
-                    <div className="items">
-                        {
+                    <div className="submitContactForm">
+                        <div className="form-contact-contain">
+                            <div className="form-item">
+                                <div className="form-group">
+                                    <div className="form-control-wrap name">
+                                        <input type="text" name="name" placeholder="Name *" max-length="100" className="form-control required" />
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <div className="form-control-wrap email">
+                                        <input type="email" name="email" placeholder="Email *" max-length="255" className="is-email form-control required" />
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <div className="form-control-wrap phone">
+                                        <input type="tel" name="phone" placeholder="Phone" max-length="20" className="is-numeric form-control" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="form-item">
+                                <div className="form-group">
+                                    <div className="form-control-wrap subject">
+                                        <input type="text" name="subject" placeholder="Subject *" className="form-control required" />
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <div className="form-control-wrap mesage">
+                                        <textarea name="message" placeholder="You're looking for *" className="form-control required"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="form-item">
+                                <div className="form-group">
+                                    <div className="recapcha">
 
-                        }
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <div className="form-control-wrap">
+
+                                    </div>
+                                </div>
+                                <div className="form-group">
+                                    <div className="button-container">
+                                        <button id="btnSubmitContact" type="submit" className="button-default request-button">Request Now</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

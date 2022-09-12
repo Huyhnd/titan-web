@@ -3,6 +3,7 @@ import nextImg from "../image/icons/next.svg"
 import prevImg from "../image/icons/back.svg"
 
 
+
 const exportObject = {
     logo,
     nextImg,

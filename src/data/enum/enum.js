@@ -54,7 +54,15 @@ import newsImg3 from '../image/images/Titan_Charity_Activity_012022_0.jpeg'
 import blogImg1 from '../image/images/5-Tech-Trends-in-Healthcare-and-Medical-App-Development-01.jpg'
 import blogImg2 from '../image/images/A-developers-tale-of-deadlines-and-fantasy-time-estimates-01.jpg'
 import blogImg3 from '../image/images/A-Practical-Guide-to-Better-Code-Reviews-01.jpg'
-
+import footerMapImg from '../image/icons/map.svg'
+import footerLocationImg1 from '../image/icons/Mail-solid.svg'
+import footerLocationImg2 from '../image/icons/Skype.svg'
+import footerLocationImg3 from '../image/icons/talk-with-us.svg'
+import footerLocationImg4 from '../image/icons/chat-with-us.svg'
+import footerBottomImg1 from '../image/icons/FB.svg'
+import footerBottomImg2 from '../image/icons/Twitter.svg'
+import footerBottomImg3 from '../image/icons/Linkdin.svg'
+import footerBottomImg4 from '../image/icons/Youtube.svg'
 
 const headerConfig = [
     {
@@ -638,8 +646,148 @@ const requestTitleConfig = [
         describe: "Thank for your interest in Titan. Please fill out the form to tell us about your area of needs. Our representative will contact you shortly."
     },
 ]
-const footerConfig = [
+const footerMapConfig = [
+    {
+        key: "text-1",
+        url: "/#",
+        text: "Contact us",
+        image: ""
+    },
+    {
+        key: "text-2",
+        url: "/#",
+        text: "Find out us on google map",
+        image: footerMapImg
+    },
+]
 
+const footerLocationConfig = [
+    {
+        key: "location-config-1",
+        url: "tel:+842839977233",
+        title: "Headquarters:",
+        content: "40 Lam Son Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam",
+        tel: "Tel: +84-28-3997-7233"
+    },
+    {
+        key: "location-config-2",
+        url: "tel:+842839977233",
+        title: "Branch office:",
+        content: "50 Cuu Long Street, Ward 2, Tan Binh District, Ho Chi Minh City, Vietnam.",
+        tel: "Tel: +84-28-3997-7233"
+    },
+    {
+        key: "location-config-3",
+        url: "tel:+842633828379",
+        title: "Branch office:",
+        content: "9/1/2 Tran Dai Nghia Street, Ward 8, Da Lat City, Vietnam.",
+        tel: "Tel: +84-26-3382-8379"
+    },
+]
+
+const footerSupportConfig = [
+    {
+        key: "email",
+        url: "/#",
+        title: "General Inquiries:",
+        content: [
+            {
+                key: "gi-1",
+                text: "info@titancorpvn.com",
+                image: footerLocationImg1,
+                url: "/#",
+            },
+            {
+                key: "gi-2",
+                text: "titancorpvn",
+                image: footerLocationImg2,
+                url: "/#",
+            },
+        ]
+    },
+    {
+        key: "sales-inner",
+        url: "/#",
+        title: "Sales & Support:",
+        content: [
+            {
+                key: "ss-1",
+                text: "sales@titancorpvn.com",
+                image: footerLocationImg1,
+                url: "/#",
+            },
+            {
+                key: "ss-2",
+                text: "support@titancorpvn.com",
+                image: footerLocationImg1,
+                url: "/#",
+            },
+        ]
+    },
+    {
+        key: "support-btn",
+        url: "/#",
+        title: "Online Support:",
+        content: [
+            {
+                key: "os-1",
+                text: "Talk With Us",
+                image: footerLocationImg3,
+                url: "/#",
+            },
+            {
+                key: "os-2",
+                text: "Chat With Us",
+                image: footerLocationImg4,
+                url: "/#",
+            }
+        ]
+    },
+]
+
+const footerBottomConfig = [
+    {
+        key: "btc-1",
+        copyright: [
+            {
+                key: "cr-1",
+                break: "© ",
+                year: "2022",
+                text: " Titan Technology Corporation. ",
+                text1: "All rights reserved. ",
+                url: "/#",
+                text2: " Privacy & Terms of Use",
+            }
+        ],
+        socials: [
+            {
+                key: "sc-1",
+                title: "Connect with us",
+                social: [
+                    {
+                        key: "sci-1",
+                        url: "https://www.facebook.com/Titan-Technology-Corporation-367359790030585",
+                        image: footerBottomImg1,
+                    },
+                    {
+                        key: "sci-2",
+                        url: "https://twitter.com/titancorpvn",
+                        image: footerBottomImg2,
+                    },
+                    {
+                        key: "sci-3",
+                        url: "https://www.linkedin.com/company/titan-technology-corporation",
+                        image: footerBottomImg3,
+                    },
+                    {
+                        key: "sci-4",
+                        url: "https://www.youtube.com/channel/UCU8y74v5CvedVo4bNGhkQnA",
+                        image: footerBottomImg4,
+                    },
+                ]
+            }
+        ]
+    }
 ]
 
 const exportedObject = {
@@ -665,7 +813,10 @@ const exportedObject = {
     blogTitleConfig,
     blogContentConfig,
     requestTitleConfig,
-    footerConfig
+    footerMapConfig,
+    footerLocationConfig,
+    footerSupportConfig,
+    footerBottomConfig,
 };
 
 
