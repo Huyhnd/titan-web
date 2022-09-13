@@ -43,6 +43,7 @@ class Header extends React.Component {
                             )
                         })
                     }
+                    <li><button id="btn-login" className="btn-login" onClick={this.props.renderLogin}>Login</button></li>
                     <li><button id="btn-menu" className="btn-menu"></button></li>
                 </ul>
             </div >

@@ -17,18 +17,33 @@ import BodyBlog from './component/body/bodyBlog';
 import BodyRequest from './component/body/bodyRequest';
 import BodyRecognized from './component/body/bodyRecognized';
 
+import LoginModel from './pages/login'
+
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       images: images,
+      renderPage: ''
     }
+
+    this.renderLogin = this.renderLogin.bind(this)
+    this.handleCloseModal = this.handleCloseModal.bind(this)
+  }
+
+  renderLogin() {
+    this.setState({ renderPage: 'login' })
+  }
+
+  handleCloseModal() {
+    this.setState({ renderPage: '' })
   }
 
   render() {
+    let { renderPage } = this.state
     return (
       <div className="App">
-        <Header images={this.state.images} />
+        <Header images={this.state.images} renderLogin={this.renderLogin} />
         <TopSlider images={this.state.images} />
         <BodyServices />
         <BodyDomain images={this.state.images} />
@@ -42,6 +57,7 @@ class App extends React.Component {
         <BodyBlog />
         <BodyRequest />
         <Footer />
+        <LoginModel renderLogin={renderPage === 'login'} handleCloseModal={this.handleCloseModal} />
       </div>
     );
   }
