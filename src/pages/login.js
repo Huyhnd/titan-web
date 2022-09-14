@@ -71,9 +71,11 @@ class Login extends React.Component {
             let response = userAPI.login(user)
             if (response) {
                 alert('Login thành công')
+                this.setState({ user: '', password: '', })
                 this.props.handleCloseModal()
             } else {
                 alert('Login thất bại')
+                this.setState({ user: '', password: '', })
             }
         }
     }
