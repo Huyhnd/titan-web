@@ -98,6 +98,7 @@ export default function BodyRequest() {
                                         <textarea
                                             className="form-control"
                                             placeholder="You're looking for *"
+                                            rows="4"
                                             {...register("message", { required: true, maxLength: 20 })}
                                             style={{ border: errors.message ? '1px solid red' : '' }}>
                                         </textarea>

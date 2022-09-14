@@ -17,7 +17,7 @@ import BodyRequest from './component/body/BodyRequest';
 import BodyRecognized from './component/body/BodyRecognized';
 import Footer from './component/footer/Footer';
 
-import LoginModel from './pages/login'
+import LoginModel from './pages/Login'
 
 class App extends React.Component {
   constructor(props) {

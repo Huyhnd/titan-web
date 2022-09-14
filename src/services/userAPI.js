@@ -4,22 +4,14 @@ const login = function (params) {
     const { userName, passWord } = params
     if (!userName || !passWord) return false
 
-    // let payload = {
-    //     url: '/account/login',
-    //     payload: {
-    //         userName: userName,
-    //         password: passWord
-    //     }
-    // }
-
     let user = users.find((x) => x.userName === userName && x.passWord === passWord)
     if (user) {
-        // Set user to LocalStorage
-        localStorage.setItem('user_login', user)
+        localStorage.setItem('user_login', JSON.stringify(user))
+        let user_login = localStorage.getItem('user_login')
+        let newUser = JSON.parse(user_login)
+        console.log(newUser.userName)
         return true
     }
-
-    return false
 }
 
 const exportObject = {
