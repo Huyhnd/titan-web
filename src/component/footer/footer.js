@@ -1,8 +1,8 @@
 import React from "react";
-import FooterBottom from "./footerBottom";
-import FooterLocation from "./footerLocation";
-import FooterMap from "./footerMap";
-import FooterSupport from "./footerSupport";
+import FooterBottom from "./FooterBottom";
+import FooterLocation from "./FooterLocation";
+import FooterMap from "./FooterMap";
+import FooterSupport from "./FooterSupport";
 
 class Footer extends React.Component {
     constructor(props) {

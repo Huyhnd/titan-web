@@ -58,7 +58,6 @@ class Login extends React.Component {
                                 <button className="btn-close-page" onClick={this.props.handleCloseModal}></button>
                             </form>
                         </div>
-
                     </div>
                 </div>
             )

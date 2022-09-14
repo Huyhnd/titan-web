@@ -2,20 +2,20 @@ import './App.css';
 import React from 'react';
 import images from './data/enum/image';
 
-import Header from './component/header/header';
-import TopSlider from './component/body/topSlider';
-import BodyServices from './component/body/bodyServices';
-import BodyDomain from './component/body/bodyDomain';
-import BodyInnovation from './component/body/bodyInnovations';
-import BodyModel from './component/body/bodyModels';
-import BodyClient from './component/body/bodyClient';
-import Footer from './component/footer/footer';
-import BodyTestimonial from './component/body/bodyTestimonial';
-import BodyJob from './component/body/bodyJob';
-import BodyNews from './component/body/bodyNews';
-import BodyBlog from './component/body/bodyBlog';
-import BodyRequest from './component/body/bodyRequest';
-import BodyRecognized from './component/body/bodyRecognized';
+import Header from './component/header/Header';
+import TopSlider from './component/body/TopSlider';
+import BodyServices from './component/body/BodyServices';
+import BodyDomain from './component/body/BodyDomain';
+import BodyInnovation from './component/body/BodyInnovations';
+import BodyModel from './component/body/BodyModels';
+import BodyClient from './component/body/BodyClient';
+import BodyTestimonial from './component/body/BodyTestimonial';
+import BodyJob from './component/body/BodyJob';
+import BodyNews from './component/body/BodyNews';
+import BodyBlog from './component/body/BodyBlog';
+import BodyRequest from './component/body/BodyRequest';
+import BodyRecognized from './component/body/BodyRecognized';
+import Footer from './component/footer/Footer';
 
 import LoginModel from './pages/login'
 
