@@ -217,3 +217,8 @@ ul {list-style-type: none;}
 .formErrors {text-align: center;}
 .formErrors p {margin: 0; padding: 0;}
 .err-form {height: 50px;}
+
+.profile-form {position: fixed; width: 200px; height: 300px; border-radius: 10%; border: solid 1px black; right: 120px; top: 88px; background-color: #12203a;}
+.profile-form .profile-contain { margin: 10px;}
+.profile-form .btn-logout-page { position: absolute; bottom: 10px; right: 10px; background-color: #86a2d1; color: #12203a; font-size: 22px; border: none; border-radius: 20px;}
+.profile-form .btn-close-page { height: 30px; width: 30px; right: -10px; top: -10px; }

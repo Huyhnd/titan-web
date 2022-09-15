@@ -7,15 +7,17 @@ const login = function (params) {
     let user = users.find((x) => x.userName === userName && x.passWord === passWord)
     if (user) {
         localStorage.setItem('user_login', JSON.stringify(user))
-        let user_login = localStorage.getItem('user_login')
-        let newUser = JSON.parse(user_login)
-        console.log(newUser.userName)
         return true
     }
 }
 
+const logout = function () {
+    localStorage.removeItem('user_login')
+    return true
+}
+
 const exportObject = {
-    login
+    login, logout
 };
 
 export default exportObject;

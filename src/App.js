@@ -18,32 +18,44 @@ import BodyRecognized from './component/body/BodyRecognized';
 import Footer from './component/footer/Footer';
 
 import LoginModel from './pages/Login'
+import ProfileModel from './pages/Profile'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       images: images,
-      renderPage: ''
+      renderPage: '',
+      renderProfileOn: ''
     }
 
+    this.renderProfile = this.renderProfile.bind(this)
+    this.handleLogoutModel = this.handleLogoutModel.bind(this)
     this.renderLogin = this.renderLogin.bind(this)
-    this.handleCloseModal = this.handleCloseModal.bind(this)
+    this.handleCloseModel = this.handleCloseModel.bind(this)
+  }
+
+  renderProfile() {
+    this.setState({ renderProfileOn: 'on' })
+  }
+
+  handleLogoutModel() {
+    this.setState({ renderProfileOn: '' })
   }
 
   renderLogin() {
     this.setState({ renderPage: 'login' })
   }
 
-  handleCloseModal() {
+  handleCloseModel() {
     this.setState({ renderPage: '' })
   }
 
   render() {
-    let { renderPage } = this.state
+    let { renderPage, renderProfileOn } = this.state
     return (
       <div className="App">
-        <Header images={this.state.images} renderLogin={this.renderLogin} />
+        <Header images={this.state.images} renderLogin={this.renderLogin} renderProfile={this.renderProfile} />
         <TopSlider images={this.state.images} />
         <BodyServices />
         <BodyDomain images={this.state.images} />
@@ -57,7 +69,8 @@ class App extends React.Component {
         <BodyBlog />
         <BodyRequest />
         <Footer />
-        <LoginModel renderLogin={renderPage === 'login'} handleCloseModal={this.handleCloseModal} />
+        <LoginModel renderLogin={renderPage === 'login'} handleCloseModel={this.handleCloseModel} />
+        <ProfileModel renderProfile={renderProfileOn === 'on'} handleLogoutModel={this.handleLogoutModel} />
       </div>
     );
   }

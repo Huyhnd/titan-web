@@ -70,9 +70,8 @@ class Login extends React.Component {
         if (isValid) {
             let response = userAPI.login(user)
             if (response) {
-                alert('Login thành công')
                 this.setState({ user: '', password: '', })
-                this.props.handleCloseModal()
+                this.props.handleCloseModel()
             } else {
                 alert('Login thất bại')
                 this.setState({ user: '', password: '', })
@@ -108,7 +107,7 @@ class Login extends React.Component {
                                     </div>
                                 </div>
                                 <button className="btn-login-page" onClick={this.handleLogin} disabled={!this.state.formValid}>Login to account</button>
-                                <button className="btn-close-page" onClick={this.props.handleCloseModal}></button>
+                                <button className="btn-close-page" onClick={this.props.handleCloseModel}></button>
                             </div>
                         </div>
                     </div>

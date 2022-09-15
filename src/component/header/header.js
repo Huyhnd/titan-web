@@ -32,6 +32,8 @@ class Header extends React.Component {
     }
 
     render() {
+        let user_login = localStorage.getItem('user_login') || null
+        let newUser = JSON.parse(user_login)
         return (
             <div className="main-header" id="main-header">
                 <a href="/#" className="logo"><img src={this.props.images.logo} alt="logo" /></a>
@@ -43,7 +45,11 @@ class Header extends React.Component {
                             )
                         })
                     }
-                    <li><button id="btn-login" className="btn-login" onClick={this.props.renderLogin}>Login</button></li>
+                    {
+                        user_login ?
+                            <li><button id="btn-profile" className="btn-login" onClick={this.props.renderProfile}>{newUser.userName}</button></li> :
+                            <li><button id="btn-login" className="btn-login" onClick={this.props.renderLogin}>Login</button></li>
+                    }
                     <li><button id="btn-menu" className="btn-menu"></button></li>
                 </ul>
             </div >
