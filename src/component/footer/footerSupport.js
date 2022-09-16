@@ -28,17 +28,19 @@ class FooterSupport extends React.Component {
                                 return (
                                     <div key={item.key} className="support-item">
                                         <h3 className="title">{item.title}</h3>
-                                        <div className={item.key}>
-                                            {
-                                                item.content.map((item) => {
-                                                    return (
-                                                        <li key={item.key}>
-                                                            <img src={item.image} alt="..." />
-                                                            <a href={item.url}>{item.text}</a>
-                                                        </li>
-                                                    )
-                                                })
-                                            }
+                                        <div className="button-contain">
+                                            <div className={item.key}>
+                                                {
+                                                    item.content.map((item) => {
+                                                        return (
+                                                            <li key={item.key} className="button">
+                                                                <img src={item.image} alt="..." />
+                                                                <a href={item.url}>{item.text}</a>
+                                                            </li>
+                                                        )
+                                                    })
+                                                }
+                                            </div>
                                         </div>
                                     </div>
                                 )
