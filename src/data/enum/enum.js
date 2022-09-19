@@ -39,6 +39,12 @@ import clientImg22 from '../image/images/https___tvt_biz_.jpeg'
 import clientImg23 from '../image/images/http___www_sssmine_com_.jpeg'
 import clientImg24 from '../image/images/http___www_ecopharma_com_vn_.jpeg'
 import clientImg25 from '../image/images/http___empiregroup_vn_.jpeg'
+import testimonialImg1 from '../image/images/Chief_Technical_Officer.png'
+import testimonialImg2 from '../image/images/VP_of_Technology.png'
+import testimonialImg3 from '../image/images/Director_of_Application_Development.png'
+import testimonialImg4 from '../image/images/CEO_&_CTO_(co-founder).png'
+import testimonialImg5 from '../image/images/Project_Manager.png'
+import testimonialImg6 from '../image/images/CEO.png'
 import recognizedImg1 from '../image/images/Award_08.png'
 import recognizedImg2 from '../image/images/Award_01.png'
 import recognizedImg3 from '../image/images/Award_03.png'
@@ -490,7 +496,54 @@ const testimonialTitleConfig = [
 ]
 
 const testimonialContentConfig = [
-
+    {
+        key: "testimonial-content-1",
+        url: "/#",
+        image: testimonialImg1,
+        name: "Dr. Tim Parker",
+        title: "Chief Technical Officer",
+        describe: "“We have worked with Titan Technology for the last three years on a complex and evolving software product.  We are delighted with the quality of the deliverables, the enthusiasm of the team, and the dedication to our project.  We look forward to continuing this excellent relationship in the years to come, and I strongly recommend Titan Technology as a software outsourcing provider.”"
+    },
+    {
+        key: "testimonial-content-2",
+        url: "/#",
+        image: testimonialImg2,
+        name: "Thomas Santonja",
+        title: "Director of Application Development",
+        describe: "“A professional and dedicated team with a spirit of delivery. Successfully worked along us for delivery of years of features.”"
+    },
+    {
+        key: "testimonial-content-3",
+        url: "/#",
+        image: testimonialImg3,
+        name: "Valery Khvatov",
+        title: "VP of Technology",
+        describe: "“The work of Titan Technology is distinguished by high professionalism and initiative. It is a wonderful combination for a tech company. Our project consisted of building a mobile app for a blockchain platform. The team asked many right questions throughout the development process and in the end the app was even better and more thought out than in our initial view. And to add, we were on budget and schedule. The quality of development is very high as well. Another very positive factor is communication. It is of utmost importance for a remote team. We are delighted to recommend working with Titan Technology, a very mature and responsible company.”"
+    },
+    {
+        key: "testimonial-content-4",
+        url: "/#",
+        image: testimonialImg4,
+        name: "Hongwen Zhang, Ph.D",
+        title: "CEO & CTO (co-founder)",
+        describe: "“Wedge Networks Inc, based in Canada, is a leader in Real-time Threat Prevention for the cloud networks. Our products and services are distributed world-wide. Product quality, reliability, and supportability are critical to our success. That’s why we partnered with Thanh Nguyen and his Titan team. Working as an extended team of Wedge Networks, the Titan team provided world class QA and product support services for us. The team is highly skilled, dependable, and flexible. The successes of our recent product launches are testaments of their significant contributions.”"
+    },
+    {
+        key: "testimonial-content-5",
+        url: "/#",
+        image: testimonialImg5,
+        name: "Chris Hennigfeld",
+        title: "Project Manager",
+        describe: "“We greatly appreciate the reliable and cost-effective team Titan has provided to us to develop and maintain one of our systems with over a thousand internal users for several years.”"
+    },
+    {
+        key: "testimonial-content-6",
+        url: "/#",
+        image: testimonialImg6,
+        name: "Stephen Cole",
+        title: "CEO",
+        describe: "“In these challenging times, I wanted to say thank you for the outstanding effort and service we have experienced with Titan.They are professionals who really take customer care to the highest levels.We will definitely be using Titan services for our new upcoming projects. Your Company is exemplary in the world of software development and project management. Our projects have always been on time and within budget at Ai6 and Collective Clarity.”"
+    },
 ]
 
 const recognizedConfig = [
