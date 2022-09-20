@@ -1,0 +1,112 @@
+.loginForm {
+
+    .login-page {
+        position        : fixed;
+        z-index         : 4;
+        left            : 0;
+        top             : 0;
+        width           : 100%;
+        height          : 100%;
+        overflow        : auto;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.5);
+        padding-top     : 60px;
+    }
+
+    .login-form {
+        position                  : fixed;
+        width                     : 500px;
+        height                    : 300px;
+        border-bottom-right-radius: 10%;
+        border                    : solid 1px black;
+        left                      : calc(50% - 250px);
+        top                       : calc(50% - 180px);
+        background-color          : #12203a;
+    }
+
+    .login-content {
+        position        : relative;
+        background-color: #86a2d1;
+        padding         : 0 0 30px 0;
+        border-radius   : 5px;
+    }
+
+    .login-title {
+        background-color: #12203a;
+        color           : white;
+
+        h3 {
+            font-size     : 32px;
+            text-transform: uppercase;
+            margin        : 0;
+            padding       : 0;
+            text-align    : center;
+        }
+    }
+
+    .form-login-group {
+        margin: -15px 0 20px 0;
+    }
+
+    .form-input {
+        position   : relative;
+        text-align : center;
+        padding-top: 7px;
+
+        top: 15px label {
+            display   : inline-block;
+            width     : 100px;
+            height    : 30px;
+            text-align: left;
+            font-size : 20px;
+            color     : #182740;
+        }
+
+        input {
+            display      : inline-block;
+            width        : 200px;
+            height       : 30px;
+            text-align   : left;
+            transform    : translateY(-3px);
+            border-radius: 5px;
+            border       : none;
+        }
+    }
+
+    .btn-close-page {
+        position        : absolute;
+        right           : -18px;
+        top             : -15px;
+        background      : url("./data/image/icons/close-btn.svg");
+        height          : 50px;
+        width           : 50px;
+        border          : solid 1px black;
+        background-color: #fff;
+        border-radius   : 30px;
+        z-index         : 5;
+    }
+
+    .btn-close-page:hover,
+    .btn-close-page:focus {
+        background-color: red;
+        cursor          : pointer;
+    }
+
+    .btn-login-page {
+        position        : absolute;
+        bottom          : -40px;
+        right           : 30px;
+        height          : 50px;
+        width           : 200px;
+        background-color: #86a2d1;
+        color           : #12203a;
+        font-size       : 22px;
+        border          : none;
+        border-radius   : 20px;
+    }
+
+    .btn-login-page:hover {
+        opacity: 0.5;
+        cursor : pointer;
+    }
+}

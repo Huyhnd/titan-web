@@ -1,0 +1,175 @@
+.body-testimonial {
+    opacity: 1;
+    display: block;
+
+    .link-to-index {
+        text-decoration: none !important;
+        cursor         : pointer;
+    }
+
+    .testimonials-slider {
+        position: relative;
+        width   : 100%;
+        opacity : 1;
+        display : block;
+    }
+
+    .items-wraper {
+        overflow: hidden;
+        position: relative;
+        width   : 100%;
+
+        .slider-items {
+            left      : 0px;
+            position  : relative;
+            transition: all 800ms ease 0s;
+
+            .slider-item {
+                float        : left;
+                padding-right: 45px;
+                padding-left : 45px;
+                text-align   : center;
+            }
+        }
+    }
+
+    .image {
+        display      : inline-block;
+        margin-bottom: 1.5em;
+    }
+
+    .testimonials-content {
+        .name {
+            font-size     : 28px;
+            text-transform: uppercase;
+            font-weight   : 400;
+        }
+
+        h4 {
+            font-size     : 28px;
+            text-transform: uppercase;
+            font-weight   : 400;
+        }
+    }
+
+    .title-border {
+        font-weight   : 400;
+        padding-bottom: 1.5em;
+        color         : #186ab4;
+        font-size     : 22px;
+    }
+
+    .title-border::after {
+        content       : "";
+        width         : 30%;
+        margin        : 0 auto;
+        border-bottom : 2px solid #ccc;
+        display       : block;
+        padding-bottom: 1.5em;
+    }
+
+    .content {
+        position     : relative;
+        padding-left : 50px;
+        padding-right: 50px;
+
+        blockquote {
+            font-size     : 22px;
+            text-overflow : ellipsis;
+            display       : inline-block;
+            max-width     : 94%;
+            overflow      : hidden;
+            white-space   : nowrap;
+            margin        : 0;
+            padding-bottom: 10px;
+            font-weight   : 300;
+            margin-bottom : 16px;
+        }
+
+        blockquote::after {
+            position   : absolute;
+            bottom     : 0;
+            left       : 50%;
+            transform  : translateX(-50%);
+            content    : "Read more >>";
+            color      : #186ab4;
+            font-size  : 16px;
+            font-weight: 300;
+        }
+    }
+
+    .describe {
+        margin-left : 120px;
+        margin-right: 120px;
+    }
+
+    .dots {
+        position       : absolute;
+        bottom         : -18px;
+        left           : 0;
+        display        : flex;
+        justify-content: center;
+        width          : 100%;
+    }
+
+    .dot {
+        width        : 8px;
+        height       : 8px;
+        background   : gray;
+        border-radius: 50%;
+        margin       : 0 3px;
+        cursor       : pointer;
+    }
+
+    .active-dot {
+        background: #3f3f3f;
+        cursor    : default;
+    }
+}
+
+
+
+a:not([href]):not([tabindex]) {
+    color          : inherit;
+    text-decoration: none;
+}
+
+@keyframes leftNext {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes leftCurr {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes rightNext {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes rightCurr {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}

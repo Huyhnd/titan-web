@@ -1,0 +1,33 @@
+.innovation-box {
+    .item-bg {
+        background-color: #f2f2f2;
+    }
+
+    .innovation-item {
+        display     : flex;
+        margin-left : -15px;
+        margin-right: -15px;
+        align-items : center;
+    }
+
+    .image {
+        flex         : 1;
+        padding-left : 15px;
+        padding-right: 15px;
+        width        : 500px;
+        height       : 335px;
+    }
+
+    .content {
+        flex         : 2;
+        padding-left : 45px;
+        padding-right: 45px;
+
+        p {
+            font-size    : 22px !important;
+            font-weight  : 300;
+            padding-left : 45px;
+            padding-right: 45px;
+        }
+    }
+}

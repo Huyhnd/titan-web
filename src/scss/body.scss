@@ -1,0 +1,208 @@
+$font-stack: Oswald,
+sans-serif;
+$primary-color: #262626;
+$grey-color   : #757575;
+$white-color  : #ffffff;
+
+
+body {
+    font-family: $font-stack;
+    margin     : 0;
+    padding    : 0;
+}
+
+a {
+    text-decoration: none;
+    color          : #262626;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.grey-color {
+    color: $grey-color !important;
+}
+
+.white-color {
+    color: $white-color !important;
+}
+
+.box {
+    padding: 50px 0 100px;
+    clear  : both;
+
+    .title-venture {
+        text-align: center;
+
+        a {
+            font-size  : 42px;
+            font-weight: 400;
+        }
+
+        a:hover {
+            color: #186ab4;
+        }
+
+        .title {
+            font-size     : 32pt;
+            font-weight   : 400;
+            text-align    : center;
+            text-transform: uppercase;
+            margin-bottom : 40px;
+            letter-spacing: .5px;
+        }
+    }
+
+    h2 {
+        font-size     : 48px;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 28px;
+        color    : #262626;
+    }
+
+    h4 {
+        font-size : 22px;
+        color     : #262626;
+        margin    : 10px 0;
+        min-height: 55px;
+    }
+
+    .items {
+        display: flex;
+
+        p {
+            font-size      : 30px;
+            color          : #757575;
+            margin-bottom  : 100px;
+            min-height     : 55px;
+            text-align-last: center;
+            text-align     : justify;
+        }
+
+        .item {
+            flex         : 1;
+            padding-left : 45px;
+            padding-right: 45px;
+
+            .item-title {
+                text-align: center;
+
+                .with-border-bottom {
+                    border-bottom : 5px solid #186ab4;
+                    margin-bottom : 50px;
+                    padding-bottom: 40px;
+                    border-bottom : 5px solid #186ab4;
+                }
+
+                .image {
+                    height: 62px;
+                }
+            }
+
+            .models-content {
+                margin : 0;
+                padding: 0;
+
+                li {
+                    list-style   : none;
+                    font-size    : 22px;
+                    margin-bottom: 24px;
+                    font-weight  : 300;
+                    text-align   : center;
+                }
+
+                li:nth-child(odd) {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .item-title {
+        cursor: pointer;
+
+        h3 {
+            font-weight   : 400;
+            text-transform: uppercase;
+        }
+    }
+
+    .item-title:hover {
+        h3 {
+            color: #186ab4;
+        }
+    }
+
+    .container {
+        width        : 84%;
+        padding-right: 10px;
+        padding-left : 10px;
+        margin-right : auto;
+        margin-left  : auto;
+
+        .describe {
+            font-size     : 30px;
+            text-align    : center;
+            padding-bottom: 100px;
+            margin        : 0 auto;
+            color         : #757575;
+            text-align    : center;
+            font-weight   : 300;
+        }
+    }
+}
+
+.title-img {
+    cursor: pointer;
+}
+
+.title-img:hover h3 {
+    color: #186ab4;
+}
+
+.button-default {
+    border-radius : 30px;
+    font-family   : Oswald, sans-serif;
+    min-width     : 200px;
+    width         : auto;
+    background    : #186ab4;
+    color         : #fff;
+    font-size     : 22px;
+    font-weight   : 400;
+    padding       : 15px;
+    display       : inline-block;
+    text-transform: uppercase;
+    text-align    : center;
+    outline       : 0;
+    border        : 0;
+    cursor        : pointer;
+    letter-spacing: .5px;
+}
+
+.form-control {
+    box-shadow      : none;
+    font-family     : Oswald, sans-serif;
+    border-radius   : 10px;
+    padding         : 12px 15px;
+    font-size       : 20px;
+    height          : auto;
+    text-align      : left;
+    text-align-last : left;
+    font-weight     : 300;
+    color           : #262626;
+    display         : block;
+    width           : 70%;
+    line-height     : 1.5;
+    background-color: #fff;
+    background-clip : padding-box;
+    border          : 1px solid #ced4da;
+    transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}

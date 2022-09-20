@@ -1,0 +1,270 @@
+.footer {
+    position: relative;
+
+    .footer-google-map {
+        background    : #262626;
+        color         : #fff;
+        text-transform: uppercase;
+        font-size     : 20px;
+        padding       : 0;
+
+        a {
+            i {
+                width         : 20px;
+                vertical-align: middle;
+                border        : none;
+            }
+
+            img {
+                width         : 20px;
+                vertical-align: middle;
+                border        : none;
+            }
+        }
+
+        .text-1 {
+            img {
+                display: none;
+            }
+        }
+
+        span {
+            color    : #fff;
+            font-size: 22px;
+        }
+
+        .map-content {
+            padding     : 40px 0;
+            display     : flex;
+            flex-wrap   : wrap;
+            margin-right: -15px;
+            margin-left : -15px;
+
+            .text-1 {
+                flex         : 1;
+                position     : relative;
+                width        : 100%;
+                min-height   : 1px;
+                padding-right: 15px;
+                padding-left : 15px;
+            }
+
+            .text-2 {
+                text-align   : right !important;
+                flex         : 1;
+                position     : relative;
+                width        : 100%;
+                min-height   : 1px;
+                padding-right: 15px;
+                padding-left : 15px;
+            }
+        }
+
+        img {
+            transform  : translateY(-5px);
+            margin-left: 5px;
+        }
+    }
+
+    .footer-location {
+        padding-bottom: 20px;
+        font-size     : 22px;
+        line-height   : 1.6;
+        position      : relative;
+        color         : #757575;
+
+        .location-content {
+            margin-left : -45px;
+            margin-right: -45px;
+            position    : relative;
+            display     : flex;
+            flex-wrap   : wrap;
+        }
+
+        .location-item {
+            flex         : 1;
+            padding-left : 45px;
+            padding-right: 45px;
+        }
+
+        h3 {
+            font-weight   : 400;
+            font-size     : 24px;
+            color         : #262626;
+            margin-bottom : 16px;
+            padding-bottom: 16px;
+            border-bottom : 2px solid #757575;
+        }
+
+        li {
+            font-weight: 200;
+            color      : #262626;
+        }
+    }
+
+    .footer-support {
+        font-size  : 22px;
+        line-height: 1.6;
+        position   : relative;
+        color      : #757575;
+        padding    : 0 0 60px;
+
+        .support-content {
+            margin-left : -45px;
+            margin-right: -45px;
+            position    : relative;
+            display     : flex;
+            flex-wrap   : wrap;
+        }
+
+        h3 {
+            font-weight   : 400;
+            font-size     : 24px;
+            color         : #262626;
+            margin-bottom : 16px;
+            padding-bottom: 16px;
+            border-bottom : 2px solid #757575;
+        }
+
+        li {
+            font-weight: 200;
+            color      : #262626;
+        }
+
+        .support-item {
+            flex         : 1;
+            padding-left : 45px;
+            padding-right: 45px;
+
+            .support-btn {
+                display        : flex;
+                cursor         : pointer;
+                justify-content: space-between;
+
+                li {
+                    flex            : 1;
+                    background-color: #186ab4;
+                    position        : relative;
+                    width           : 100%;
+                    min-height      : 1px;
+                    padding-right   : 15px;
+                    padding-left    : 15px;
+                    border-radius   : 30px;
+                    height          : 42px;
+                    text-align      : center;
+                }
+
+                a {
+                    color       : #fff;
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        img {
+            width: 20px;
+            width: 20px;
+        }
+
+        .sales-inner {
+            a {
+                font-weight : 300;
+                color       : #757575;
+                padding-left: 5px;
+            }
+
+            li {
+                margin-bottom: 1em;
+            }
+        }
+
+        .email {
+            a {
+                font-weight : 300;
+                color       : #757575;
+                padding-left: 5px;
+            }
+
+            li {
+                margin-bottom: 1em;
+            }
+        }
+
+        .button-contain {
+            display     : flex;
+            margin-left : -10px;
+            margin-right: -10px;
+
+            .button {
+                flex           : 1;
+                justify-content: space-between;
+                margin-left    : 20px;
+                margin-right   : 20px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding         : 25px 0;
+        background-color: #f0f0f0;
+        font-weight     : 300;
+        font-size       : 22px;
+
+        .bottom-content {
+            display     : flex;
+            align-items : center;
+            margin-right: -15px;
+            margin-left : -15px;
+        }
+
+        .copyright {
+            flex         : 2;
+            color        : #757575;
+            position     : relative;
+            width        : 100%;
+            min-height   : 1px;
+            padding-right: 15px;
+            padding-left : 15px;
+        }
+
+        a {
+            color: #757575;
+        }
+
+        .socials {
+            flex         : 1;
+            text-align   : right;
+            position     : relative;
+            width        : 100%;
+            min-height   : 1px;
+            padding-right: 15px;
+            padding-left : 15px;
+        }
+
+        strong {
+            font-weight: 400;
+        }
+
+        .social-icon {
+            transition : all .3s ease;
+            color      : #262626;
+            display    : inline-block;
+            font-size  : 32px;
+            margin-left: 36px;
+        }
+
+    }
+
+    .back-to-top {
+        background     : url("./data/image/icons/back-to-top.svg");
+        position       : absolute;
+        right          : 15px;
+        bottom         : 15px;
+        width          : 60px;
+        height         : 60px;
+        border-radius  : 50%;
+        display        : block;
+        text-decoration: none;
+        cursor         : pointer;
+    }
+}

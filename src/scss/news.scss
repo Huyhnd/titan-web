@@ -1,0 +1,39 @@
+.body-news {
+    .item {
+        flex     : 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+
+    img {
+        height: 260px;
+        width : 325px;
+    }
+
+    .content-title {
+        padding      : 20px 0 10px;
+        margin-bottom: 30px;
+        height       : 40px;
+    }
+
+    h3 {
+        font-size     : 24px;
+        font-weight   : 400;
+        margin        : 0;
+        text-transform: uppercase;
+    }
+
+    .content-description {
+        text-align-last: none;
+        text-align     : none;
+    }
+
+    .items {
+        p {
+            font-size      : 22px;
+            font-weight    : 200;
+            margin         : 0;
+            text-align-last: unset;
+            text-align     : left;
+        }
+    }
+}

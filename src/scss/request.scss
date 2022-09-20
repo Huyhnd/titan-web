@@ -1,0 +1,93 @@
+.body-request {
+    padding-top: 0;
+    position   : relative;
+
+    .form-contact-contain {
+        margin-left : -45px;
+        margin-right: -45px;
+        position    : relative;
+        display     : flex;
+        flex-wrap   : wrap;
+    }
+
+    .form-item {
+        flex         : 1;
+        position     : relative;
+        min-height   : 1px;
+        padding-left : 45px;
+        padding-right: 45px;
+    }
+
+    .form-group {
+        margin-bottom: 36px;
+        text-align   : left;
+        padding-top  : 7px;
+    }
+
+    .form-control-wrap {
+        position: relative;
+        display : block;
+
+        input {
+            padding-left: 60px;
+            outline     : none;
+        }
+
+        input:focus {
+            border: solid 1px #186ab4;
+        }
+
+        textarea {
+            outline: none;
+        }
+
+        textarea:focus {
+            border: solid 1px #186ab4;
+        }
+    }
+
+    .form-control-wrap::before {
+        position : absolute;
+        top      : 50%;
+        left     : 20px;
+        transform: translateY(-50%);
+        width    : 20px;
+        height   : 20px;
+        content  : "";
+        z-index  : 1;
+    }
+
+    .form-control-wrap.name::before {
+        background: #fff url(./data/image/icons/Name.svg) no-repeat center;
+    }
+
+    .form-control-wrap.email::before {
+        background: #fff url(./data/image/icons/Mail-light.svg) no-repeat center;
+    }
+
+    .form-control-wrap.phone::before {
+        background: #fff url(./data/image/icons/Contact-no.svg) no-repeat center;
+    }
+
+    .form-control-wrap.subject::before {
+        background: #fff url(./data/image/icons/Subject.svg) no-repeat center;
+    }
+
+    .recapcha {
+        height: 78px;
+    }
+
+    .text-error {
+        font-weight: 600;
+        color      : red;
+        margin-top : -26px;
+        margin-left: 10%;
+    }
+
+}
+
+[name=message] {
+    height: 125px;
+    width : 290px;
+    resize: none;
+}

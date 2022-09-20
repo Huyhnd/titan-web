@@ -1,0 +1,49 @@
+.body-job {
+
+    .job-item {
+        display    : flex;
+        align-items: center;
+
+        .content {
+            position: relative;
+        }
+
+        .main-content {
+            padding: 0 0 0 55px;
+        }
+
+        .btn-join {
+            background    : #186ab4;
+            color         : #fff;
+            min-width     : 200px;
+            border        : 0;
+            outline       : 0;
+            cursor        : pointer;
+            text-transform: uppercase;
+            text-align    : center;
+            letter-spacing: .5px;
+            margin        : 20px 0;
+            font-size     : 22px;
+            font-weight   : 400;
+            border-radius : 30px;
+            padding       : 15px;
+            display       : inline-block;
+        }
+    }
+
+    .image {
+        padding: 0 15px 0 15px;
+    }
+
+    .content {
+        padding: 0 15px 0 15px;
+    }
+
+    .items {
+        p {
+            margin     : 0 0 10px 0;
+            font-size  : 28px;
+            font-weight: 300;
+        }
+    }
+}

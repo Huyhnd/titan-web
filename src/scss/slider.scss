@@ -1,0 +1,128 @@
+.slider {
+    width   : 100%;
+    height  : 100vh;
+    position: relative;
+    color   : #fff;
+    overflow: hidden;
+
+    * {
+        color: #fff;
+    }
+
+    .slides {
+        margin    : 0;
+        padding   : 0;
+        display   : block;
+        overflow  : hidden;
+        position  : absolute;
+        left      : 0;
+        transition: 1s;
+
+        .slide-item {
+            width   : 100vw;
+            height  : 100vh;
+            display : block;
+            float   : left;
+            position: relative;
+
+            h1 {
+                text-align    : center;
+                text-transform: uppercase;
+                font-size     : 60px;
+                margin        : 0;
+            }
+
+            span {
+                font-weight: 300;
+            }
+
+            p {
+                text-align: center;
+                margin    : 10px 0 0 0;
+                font-size : 32px;
+            }
+
+            .slide-content {
+                position : absolute;
+                bottom   : 150px;
+                left     : 10%;
+                max-width: 80%;
+            }
+
+            &.item1 {
+                background         : url("../data/image/images/home-banner-1.jpg");
+                background-position: top center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+            }
+
+            &.item2 {
+                background         : url("../data/image/images/home-banner-2.jpg");
+                background-position: top center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+            }
+
+            &.item3 {
+                background         : url("../data/image/images/home-banner-4.jpg");
+                background-position: top center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+            }
+
+            &.item4 {
+                background         : url("../data/image/images/home-banner-3.jpg");
+                background-position: top center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+            }
+        }
+
+
+    }
+
+
+    .slider-actions {
+        position  : absolute;
+        bottom    : 40px;
+        width     : 200px;
+        text-align: center;
+        left      : calc(50% - 100px);
+
+        .btn-previus {
+            width           : 40px;
+            height          : 40px;
+            float           : left;
+            background-color: transparent;
+            padding         : 0;
+            border          : none;
+            cursor          : pointer
+        }
+
+        .btn-next {
+            width           : 40px;
+            height          : 40px;
+            float           : right;
+            background-color: transparent;
+            padding         : 0;
+            border          : none;
+            cursor          : pointer
+        }
+
+        img {
+            text-align: center;
+            top       : 50%;
+            transform : translateY(26%);
+        }
+
+        span {
+            font-size: 35px;
+        }
+    }
+
+    img {
+        width : 40px;
+        height: 40px;
+    }
+
+}

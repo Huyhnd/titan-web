@@ -1,0 +1,85 @@
+.box-bg {
+    background           : url("./data/image/images/paralax-domains.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    padding-bottom       : 70px;
+    position             : relative;
+
+    .sub-slider {
+        position: relative;
+        overflow: hidden;
+        color   : #fff;
+        height  : 750px;
+
+        .slides {
+            margin    : 0;
+            padding   : 0;
+            overflow  : hidden;
+            position  : absolute;
+            left      : 0;
+            transition: left 2s ease;
+            display   : flex;
+
+            .slide-item {
+                padding-right: 45px;
+                padding-left : 45px;
+                text-align   : center;
+            }
+        }
+
+    }
+
+
+    button {
+        width           : 70px;
+        height          : 70px;
+        position        : absolute;
+        top             : 50%;
+        background-color: transparent;
+        padding         : 0;
+        border          : none;
+        cursor          : pointer
+    }
+
+    .btn-next {
+        right: 40px;
+    }
+
+    .btn-previus {
+        left: 40px;
+    }
+
+    .btn-next {
+        img {
+            height: 70px;
+            width : 70px;
+        }
+    }
+
+    .btn-previus {
+        img {
+            height: 70px;
+            width : 70px;
+        }
+    }
+
+    .container {
+        max-width: 1240px;
+
+        &.sub-slider p {
+            color      : #fff;
+            font-size  : 22px;
+            font-weight: 100;
+        }
+
+        &.sub-slider h3 {
+            color: #fff
+        }
+
+        &.sub-slider a {
+            color: #fff
+        }
+    }
+}

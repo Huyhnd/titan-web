@@ -1,0 +1,82 @@
+.client-box {
+    background           : url("./data/image/images/our-clients.jpg");
+    background-attachment: fixed;
+    background-position  : center;
+    background-repeat    : no-repeat;
+    background-size      : cover;
+    padding-bottom       : 70px;
+    position             : relative;
+
+    a {
+        color: #fff;
+    }
+
+    .sub-slider {
+        height: 450px;
+
+        .slides {
+            margin    : 0;
+            padding   : 0;
+            overflow  : hidden;
+            position  : absolute;
+            left      : 0;
+            transition: left 2s ease;
+            display   : flex;
+
+            .slide-item {
+                padding-left : 20px;
+                padding-right: 20px;
+                text-align   : center;
+            }
+        }
+    }
+
+    button {
+        width           : 70px;
+        height          : 70px;
+        position        : absolute;
+        top             : 59%;
+        background-color: transparent;
+        padding         : 0;
+        border          : none;
+        cursor          : pointer
+    }
+
+    .btn-next {
+        right: 60px;
+
+        img {
+            height: 60px;
+            width : 60px;
+        }
+    }
+
+    .btn-previus {
+        left: 60px;
+
+        img {
+            height: 60px;
+            width : 60px;
+        }
+    }
+
+    .logo-item {
+        line-height: 1;
+
+        a {
+            text-align : center;
+            line-height: 1;
+        }
+
+        img {
+            transition: all .3s ease;
+            filter    : grayscale(1);
+            filter    : gray;
+            width     : 99%;
+        }
+
+        img:hover {
+            filter: grayscale(0);
+        }
+    }
+}
