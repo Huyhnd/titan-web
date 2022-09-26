@@ -12,10 +12,11 @@ class BodyRecognized extends React.Component {
             currentRecognizedSliderItem: 1
         }
         this.loadRecognizedSlide = this.loadRecognizedSlide.bind(this)
+        this.nextRecognizedSlider = this.nextRecognizedSlider.bind(this)
     }
 
     loadRecognizedSlide() {
-        let recognizedItemWidth = (document.getElementById("recognized-slider").clientWidth) / 6
+        let recognizedItemWidth = (document.getElementById("slides-outer").clientWidth) / 5
         this.setState({ recognizedItemWidth: recognizedItemWidth, recognizedSliderContainWidth: recognizedItemWidth * this.state.recognizedItemCount })
     }
 
@@ -66,12 +67,12 @@ class BodyRecognized extends React.Component {
                                     <div className="text" id="recognized-text">
                                         <h3>{item.text}</h3>
                                     </div>
-                                    <div className="slides-outer">
+                                    <div className="slides-outer" id="slides-outer">
                                         <div className="slides" id="recognized-slider-items" style={{ width: `${recognizedSliderContainWidth}px` }}>
                                             {
                                                 item.images.map((item) => {
                                                     return (
-                                                        <div className="item" key={item.key} style={{ minWidth: `${recognizedItemWidth}px` }}>
+                                                        <div className="item" key={item.key} style={{ Width: `${recognizedItemWidth}px` }}>
                                                             <li>
                                                                 <a href={item.url} >
                                                                     <img src={item.image}
