@@ -28,7 +28,7 @@ class Footer extends React.Component {
                 <FooterLocation />
                 <FooterSupport />
                 <FooterBottom />
-                <a href="/#top-slider"><span title="Scroll to top" className="back-to-top"></span></a>
+                <a href="/#Top"><span title="Scroll to top" className="back-to-top"></span></a>
             </div>
         );
     }
