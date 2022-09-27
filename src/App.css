@@ -712,46 +712,6 @@ a:not([href]):not([tabindex]) {
     margin-top: 60px;
 }
 
-@keyframes leftNext {
-    from {
-        left: 100%;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-@keyframes leftCurr {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: -100%;
-    }
-}
-
-@keyframes rightNext {
-    from {
-        left: -100%;
-    }
-
-    to {
-        left: 0;
-    }
-}
-
-@keyframes rightCurr {
-    from {
-        left: 0;
-    }
-
-    to {
-        left: 100%;
-    }
-}
-
 .body-job .job-item {
     display    : flex;
     align-items: center;
